@@ -1,0 +1,29 @@
+app:
+  name: smart-farming-engine
+  env: production
+  port: 8182
+
+database:
+  dsn: ""
+
+logging:
+  level: info
+  debug: false
+
+auth:
+  jwt_secret: ""
+
+llm:
+  provider: 
+  api_url: 
+  api_key: 
+  model: 
+  timeout: 
+
+cnn:
+  mode: on_device_flutter
+  url: ""
+
+cors:
+  allowed_origins:
+    - 
