@@ -1,0 +1,12 @@
+.git
+.idea
+.vscode
+
+uploads
+
+tmp
+bin
+
+*.log
+
+dataset

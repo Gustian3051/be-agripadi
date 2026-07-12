@@ -1,0 +1,890 @@
+no,product_name,pesticide_type,formulation,ingredient_name,ingredient_concentration,ingredient_unit,nama_komoditas,target_pest,dose_value,dose_unit,registered_at,expired_at
+1,BASUNDEP 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,penggerek batang,2,ml/l,2024-03-04,2029-03-04
+2,"HOOWLA 5,7 SG",Insektisida,SG,emamektin benzoat,5.7,%,padi,penggerek batang,2.25,g/l,2024-09-19,2029-09-19
+3,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,penggerek batang,200,g/ha,2022-06-27,2027-06-27
+4,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,penggerek batang,200,g/ha,2022-06-27,2027-06-27
+5,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,penggerek batang,200,g/ha,2022-06-27,2027-06-27
+6,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,penggerek batang,200,g/ha,2022-06-27,2027-06-27
+7,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,penggerek batang,200,g/ha,2022-06-27,2027-06-27
+8,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,penggerek batang,200,g/ha,2022-06-27,2027-06-27
+9,MEURTIEUR 30 EC,Insektisida,EC,Emamektin benzoat,30,g/l,padi,penggerek batang,1.5,ml/l,2024-08-09,2029-08-09
+10,PHOSCORMITE 18 EC,Insektisida,EC,Abamektin,18,g/l,padi,penggerek batang,1,ml/l,2024-09-19,2029-09-19
+11,TAMAFUR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,17,kg/ha,2026-01-20,2031-01-20
+12,TRUPER 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,10,kg/ha,2026-01-20,2031-01-20
+13,REGENT 0.3 GR,Insektisida,GR,Fipronil,0.3,%,padi,penggerek batang,10,kg/ha,2026-04-20,2031-04-20
+14,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,walang sangit,200,g/ha,2022-06-27,2027-06-27
+15,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,walang sangit,200,g/ha,2022-06-27,2027-06-27
+16,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,walang sangit,200,g/ha,2022-06-27,2027-06-27
+17,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,walang sangit,200,g/ha,2022-06-27,2027-06-27
+18,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,walang sangit,200,g/ha,2022-06-27,2027-06-27
+19,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,walang sangit,200,g/ha,2022-06-27,2027-06-27
+20,BAZAK 29/12 WG,Insektisida,WG,Dinotefuran,12,%,padi,wereng batang cokelat,2,g/l,2025-02-17,2030-02-17
+21,BAZAK 29/12 WG,Insektisida,WG,Pimetrozin,29,%,padi,wereng batang cokelat,2,g/l,2025-02-17,2030-02-17
+22,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,wereng batang cokelat,200,g/ha,2022-06-27,2027-06-27
+23,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,wereng batang cokelat,200,g/ha,2022-06-27,2027-06-27
+24,LESENTA 80 WG,Insektisida,WG,fipronil,40,%,padi,wereng batang cokelat,200,g/ha,2022-06-27,2027-06-27
+25,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,wereng batang cokelat,200,g/ha,2022-06-27,2027-06-27
+26,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,wereng batang cokelat,200,g/ha,2022-06-27,2027-06-27
+27,LESENTA 80 WG,Insektisida,WG,imidacloprid,40,%,padi,wereng batang cokelat,200,g/ha,2022-06-27,2027-06-27
+28,ABAKTIN 18 EC,Insektisida,EC,Abamectin,18,%,padi,penggerek batang,"1,5",ml/l,2024-03-05,2029-03-05
+29,ABAPEAK 32 EC,Insektisida,EC,Abamektin,32,g/l,padi,penggerek batang,1,ml/l,2024-11-18,2029-11-18
+30,AFONIL 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,5",ml/l,2023-08-28,2028-08-28
+31,AGENT 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,2,ml/l,2023-04-26,2028-04-26
+32,AJAR 450 SL,Insektisida,SL,Dimehipo,450,g/l,padi,penggerek batang,"1,5",ml/l,2025-07-11,2030-07-11
+33,ALFAMEX 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,1.5,ml/l,2023-02-08,2028-02-08
+34,ALPHADINE 6 GR,Insektisida,GR,dimehipo,6,%,padi,penggerek batang,12,kg/ha,2022-06-27,2027-06-27
+35,"AMFIPRON 0,3 GR",Insektisida,GR,Fipronil,"0,3",%,padi,penggerek batang,25,kg/ha,2023-04-26,2028-04-26
+36,AMURON 20/50 EC,Insektisida,EC,Emamektin benzoat,20,g/l,padi,penggerek batang,1,ml/l,2024-03-04,2029-03-04
+37,AMURON 20/50 EC,Insektisida,EC,Heksaflumuron,50,g/l,padi,penggerek batang,1,ml/l,2024-03-04,2029-03-04
+38,ANDROMEDA 50/100 EC,Insektisida,EC,Abamektin,50,g/l,padi,penggerek batang,1,ml/l,2024-08-09,2029-08-09
+39,ANDROMEDA 50/100 EC,Insektisida,EC,Asetamiprid,100,g/l,padi,penggerek batang,1,ml/l,2024-08-09,2029-08-09
+40,"Aneto 0,5 GR",Insektisida,GR,fipronil,"0,5",%,padi,penggerek batang,1,kg/ha,2025-11-13,2030-11-13
+41,Aneto 50 EC,Insektisida,EC,fipronil,50,g/l,padi,penggerek batang,1,l/ha,2024-11-18,2029-11-18
+42,APOTAP 40/3 WP,Insektisida,WP,Fipronil,3,%,padi,penggerek batang,1,g/l,2024-09-19,2029-09-19
+43,APOTAP 40/3 WP,Insektisida,WP,Kartap,40,%,padi,penggerek batang,1,g/l,2024-09-19,2029-09-19
+44,ASPRIL 100 SC,Insektisida,SC,Fipronil,100,g/l,padi,penggerek batang,1,ml/l,2022-12-05,2027-12-05
+45,ASPRIL 100 SC,Insektisida,SC,Fipronil,100,g/l,padi,penggerek batang,1,ml/l,2022-12-05,2027-12-05
+46,ASPRIL 100 SC,Insektisida,SC,Fipronil,100,g/l,padi,penggerek batang,1,ml/l,2022-12-05,2027-12-05
+47,ASSOCIATE 40/160 SC,Insektisida,SC,emamektin benzoat,40,g/l,padi,penggerek batang,1,ml/l,2025-11-13,2030-11-13
+48,ASSOCIATE 40/160 SC,Insektisida,SC,indosakarb,160,g/l,padi,penggerek batang,1,ml/l,2025-11-13,2030-11-13
+49,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+50,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+51,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+52,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+53,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+54,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+55,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+56,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+57,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+58,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+59,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+60,BELT EXPERT 480 SC,Insektisida,SC,flubendiamida,240,g/l,padi,penggerek batang,0.75,ml/l,2024-03-05,2029-03-05
+61,BELT EXPERT 480 SC,Insektisida,SC,flubendiamida,240,g/l,padi,penggerek batang,0.75,ml/l,2024-03-05,2029-03-05
+62,BELT EXPERT 480 SC,Insektisida,SC,flubendiamida,240,g/l,padi,penggerek batang,0.75,ml/l,2024-03-05,2029-03-05
+63,BELT EXPERT 480 SC,Insektisida,SC,tiakloprid,240,g/l,padi,penggerek batang,0.75,ml/l,2024-03-05,2029-03-05
+64,BELT EXPERT 480 SC,Insektisida,SC,tiakloprid,240,g/l,padi,penggerek batang,0.75,ml/l,2024-03-05,2029-03-05
+65,BELT EXPERT 480 SC,Insektisida,SC,tiakloprid,240,g/l,padi,penggerek batang,0.75,ml/l,2024-03-05,2029-03-05
+66,BENZAPYR 20/100 SC,Insektisida,SC,emamektin benzoat,20,g/l,padi,penggerek batang,"2,25",ml/l,2026-01-20,2031-01-20
+67,BENZAPYR 20/100 SC,Insektisida,SC,klorfenapir,100,g/l,padi,penggerek batang,"2,25",ml/l,2026-01-20,2031-01-20
+68,BESHIPO 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+69,BESVIDOR 25 WP,Insektisida,WP,Imidakloprid,25,%,padi,penggerek batang,"1,5 - 2",g/l,2025-09-26,2030-09-26
+70,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+71,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+72,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+73,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+74,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+75,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+76,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+77,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+78,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"0,25",l/ha,2022-12-05,2027-12-05
+79,CENTADINE 450 SL,Insektisida,SL,dimehipo,450,g/l,padi,penggerek batang,3,ml/l,2022-10-04,2027-10-04
+80,CENTAFUR 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,"18,75",kg/ha,2023-08-28,2028-08-28
+81,CERBERUS 200 SC,Insektisida,SC,Klorantraniliprol,200,g/l,padi,penggerek batang,1,ml/l,2026-01-20,2031-01-20
+82,CONQUER 100/200 SC,Insektisida,SC,Klorantraniliprol,100,g/l,padi,penggerek batang,"0,4",ml/l,2025-07-11,2030-07-11
+83,CONQUER 100/200 SC,Insektisida,SC,Tiametoksam,200,g/l,padi,penggerek batang,"0,4",ml/l,2025-07-11,2030-07-11
+84,CONSTEL 105/420 SC,Insektisida,SC,Klorantraniliprol,105,g/l,padi,penggerek batang,0.75,ml/l,2025-02-17,2030-02-17
+85,CONSTEL 105/420 SC,Insektisida,SC,Metoksifenosida,420,g/l,padi,penggerek batang,0.75,ml/l,2025-02-17,2030-02-17
+86,CURATERR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,"12,75",kg/ha,2024-03-04,2029-03-04
+87,D-REJEN 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+88,DANATAN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2023-02-08,2028-02-08
+89,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+90,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+91,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+92,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+93,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+94,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+95,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+96,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+97,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+98,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,penggerek batang,1.7,ml/l,2022-12-05,2027-12-05
+99,DEMOLISH 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,1,ml/l,2024-03-04,2029-03-04
+100,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+101,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+102,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+103,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+104,Dharmafur 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,17,kg/ha,2022-12-05,2027-12-05
+105,Dharmafur 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,25.5,kg/ha,2022-12-05,2027-12-05
+106,DIME-TAN 500 SL,Insektisida,SL,DIMEHIPO,500,g/l,padi,penggerek batang,2,ml/l,2024-09-19,2029-09-19
+107,DIMECTIN 18 EC,Insektisida,EC,Abamektin,18,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+108,DIPHO 290 SL,Insektisida,SL,Dimehipo,290,g/l,padi,penggerek batang,"1,5",ml/l,2025-11-13,2030-11-13
+109,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+110,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+111,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+112,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+113,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+114,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+115,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+116,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+117,DIPHO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"2,25",ml/l,2022-10-04,2027-10-04
+118,DYNASTY 400 SL,Insektisida,SL,Bisultap,400,g/l,padi,penggerek batang,1,ml/l,2023-02-08,2028-02-08
+119,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+120,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+121,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+122,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+123,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+124,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+125,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+126,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+127,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+128,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+129,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+130,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+131,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+132,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+133,ENDURE 120 SC,Insektisida,SC,Spinetoram,120,g/l,padi,penggerek batang,1,ml/l,2022-06-27,2027-06-27
+134,ET-HIPO 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+135,EXPERTO 300 SC,Insektisida,SC,Imidakloprid,200,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+136,EXPERTO 300 SC,Insektisida,SC,Imidakloprid,200,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+137,EXPERTO 300 SC,Insektisida,SC,Imidakloprid,200,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+138,EXPERTO 300 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+139,EXPERTO 300 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+140,EXPERTO 300 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,penggerek batang,"1,5",ml/l,2023-04-26,2028-04-26
+141,FASTREX 36 EC,Insektisida,EC,Abamektin,36,g/l,padi,penggerek batang,1,ml/l,2024-11-18,2029-11-18
+142,FERADIPO 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,2.5,ml/l,2023-08-28,2028-08-28
+143,FIPRON 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"1,5",ml/l,2024-11-18,2029-11-18
+144,FIPROS 55 SC,Insektisida,SC,fipronil,55,g/l,padi,penggerek batang,"0,5 - 1",ml/l,2023-02-08,2028-02-08
+145,FIPROS 55 SC,Insektisida,SC,fipronil,55,g/l,padi,penggerek batang,"0,5 - 1",ml/l,2023-02-08,2028-02-08
+146,FLUPRID 240/240 SC,Insektisida,SC,Flubendiamida,240,g/l,padi,penggerek batang,"0,5",ml/l,2022-10-04,2027-10-04
+147,FLUPRID 240/240 SC,Insektisida,SC,Tiakloprid,240,g/l,padi,penggerek batang,"0,5",ml/l,2022-10-04,2027-10-04
+148,FORZA 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,2,ml/l,2023-02-08,2028-02-08
+149,FORZA 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,2,ml/l,2023-02-08,2028-02-08
+150,FORZA 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,2,ml/l,2023-02-08,2028-02-08
+151,FREECOR 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2023-02-08,2028-02-08
+152,FURADAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,"25,5",kg/ha,2026-04-20,2031-04-20
+153,FURANO 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,15,kg/ha,2026-01-20,2031-01-20
+154,FURINDO 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,15,kg/ha,2025-11-13,2030-11-13
+155,FURROZ 40/20 WG,Insektisida,WG,dinotefuran,20,%,padi,penggerek batang,0.5,g/l,2024-03-04,2029-03-04
+156,FURROZ 40/20 WG,Insektisida,WG,pymetrozine,40,%,padi,penggerek batang,0.5,g/l,2024-03-04,2029-03-04
+157,Gallery 403 SL,Insektisida,SL,Dimehipo,403,g/l,padi,penggerek batang,1,ml/l,2025-11-13,2030-11-13
+158,GARNET 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,2,ml/l,2026-01-20,2031-01-20
+159,GHOZI 160/20 OD,Insektisida,OD,Emamektin benzoat,20,g/l,padi,penggerek batang,1.5,ml/l,2022-06-27,2027-06-27
+160,GHOZI 160/20 OD,Insektisida,OD,Emamektin benzoat,20,g/l,padi,penggerek batang,1.5,ml/l,2022-06-27,2027-06-27
+161,GHOZI 160/20 OD,Insektisida,OD,Emamektin benzoat,20,g/l,padi,penggerek batang,1.5,ml/l,2022-06-27,2027-06-27
+162,GHOZI 160/20 OD,Insektisida,OD,Indoksakarb,160,g/l,padi,penggerek batang,1.5,ml/l,2022-06-27,2027-06-27
+163,GHOZI 160/20 OD,Insektisida,OD,Indoksakarb,160,g/l,padi,penggerek batang,1.5,ml/l,2022-06-27,2027-06-27
+164,GHOZI 160/20 OD,Insektisida,OD,Indoksakarb,160,g/l,padi,penggerek batang,1.5,ml/l,2022-06-27,2027-06-27
+165,HOKITAN 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,penggerek batang,2,ml/l,2024-03-05,2029-03-05
+166,HOPROLE PLUS 160/20 OD,Insektisida,OD,Emamektin benzoat,20,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+167,HOPROLE PLUS 160/20 OD,Insektisida,OD,Emamektin benzoat,20,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+168,HOPROLE PLUS 160/20 OD,Insektisida,OD,Indoksakarb,160,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+169,HOPROLE PLUS 160/20 OD,Insektisida,OD,Indoksakarb,160,g/l,padi,penggerek batang,1,ml/l,2022-10-04,2027-10-04
+170,INDODINE 485 SL,Insektisida,SL,Dimehipo,485,g/l,padi,penggerek batang,"0,5",ml/l,2025-09-26,2030-09-26
+171,INDODINE 6 GR,Insektisida,GR,dimehipo,6,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+172,INDOMEC 20 EC,Insektisida,EC,abamektin,20,g/l,padi,penggerek batang,2,ml/l,2024-03-05,2029-03-05
+173,JADUG 30 EC,Insektisida,EC,Emamektin Benzoat,30,g/l,padi,penggerek batang,2,ml/l,2025-07-11,2030-07-11
+174,JAMBO 200 ME,Insektisida,ME,abamektin,2,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+175,JAMBO 200 ME,Insektisida,ME,Monosultap,198,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+176,JOKI 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,125",l/ha,2022-10-04,2027-10-04
+177,JOKI 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,125",l/ha,2022-10-04,2027-10-04
+178,JOKI 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,125",l/ha,2022-10-04,2027-10-04
+179,JOKI 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,125",l/ha,2022-10-04,2027-10-04
+180,JOKI 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,125",l/ha,2022-10-04,2027-10-04
+181,JOKI 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,125",l/ha,2022-10-04,2027-10-04
+182,JORDAN 5 GR,Insektisida,GR,karbofuran,5,%,padi,penggerek batang,10,kg/ha,2023-08-28,2028-08-28
+183,KATANA 200 SC,Insektisida,SC,flubendiamid,200,g/l,padi,penggerek batang,"0,3",ml/l,2024-11-18,2029-11-18
+184,KEMPO 400 SL,Insektisida,SL,dimehypo,400,g/l,padi,penggerek batang,2,ml/kg benih,2024-08-09,2029-08-09
+185,KK-PLUS 200 SC,Insektisida,SC,klorantraniliprol,200,g/l,padi,penggerek batang,1,ml/l,2026-04-20,2031-04-20
+186,"KLORANPRO 0,4 GR",Insektisida,GR,Klorantraniliprol,"0,4",%,padi,penggerek batang,"7,5",kg/ha,2026-04-20,2031-04-20
+187,KRESNADAN 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,15,kg/ha,2025-11-13,2030-11-13
+188,KURATERBANG 3.3 GR,Insektisida,GR,Karbofuran,3.3,%,padi,penggerek batang,17,kg/ha,2023-02-08,2028-02-08
+189,KURATERBANG 3.3 GR,Insektisida,GR,karbofuran,3.3,%,padi,penggerek batang,17,kg/ha,2023-02-08,2028-02-08
+190,LANDEP 450 SL,Insektisida,SL,dimehipo,450,g/l,padi,penggerek batang,"2,25",ml/l,2025-02-17,2030-02-17
+191,LANDHYPO 500 SL,Insektisida,SL,Dimehypo,500,g/l,padi,penggerek batang,2,ml/l,2024-08-09,2029-08-09
+192,LASER 60/20 WG,Insektisida,WG,Nitenpiram,20,%,padi,penggerek batang,2,g/l,2024-09-19,2029-09-19
+193,LASER 60/20 WG,Insektisida,WG,Pimetrozin,60,%,padi,penggerek batang,2,g/l,2024-09-19,2029-09-19
+194,LUMIVIA B 625 FS,Insektisida,FS,Klorantraniliprol,625,g/l,padi,penggerek batang,6,ml/kg benih,2025-09-26,2030-09-26
+195,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2022-10-04,2027-10-04
+196,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2022-10-04,2027-10-04
+197,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2022-10-04,2027-10-04
+198,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2022-10-04,2027-10-04
+199,MARATHON 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,0.5,ml/l,2025-02-17,2030-02-17
+200,MARSHAL 200 SC,Insektisida,SC,Karbosulfan,200,g/l,padi,penggerek batang,2,ml/l,2022-10-04,2027-10-04
+201,MATRIX 200 EC,Insektisida,EC,karbosulfan,200,g/l,padi,penggerek batang,"0,5",ml/l,2024-03-04,2029-03-04
+202,MATRIX WIN 200/100 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,"0,5",ml/l,2024-03-04,2029-03-04
+203,MATRIX WIN 200/100 EC,Insektisida,EC,Karbosulfan,200,g/l,padi,penggerek batang,"0,5",ml/l,2024-03-04,2029-03-04
+204,MAXDINE 480 SL,Insektisida,SL,Dimehipo,480,g/l,padi,penggerek batang,1,ml/l,2025-07-11,2030-07-11
+205,MAXIMA 4/64 WP,Insektisida,WP,Flubendiamida,4,%,padi,penggerek batang,0.25-0.5,kg/ha,2024-11-18,2029-11-18
+206,MAXIMA 4/64 WP,Insektisida,WP,Monosultap,64,%,padi,penggerek batang,0.25-0.5,kg/ha,2024-11-18,2029-11-18
+207,MONTAF 400 SL,Insektisida,SL,dimehipo,400,g/l,padi,penggerek batang,"1,5",ml/l,2024-03-04,2029-03-04
+208,MORGENT 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,1,ml/l,2025-07-11,2030-07-11
+209,NARAGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,2,ml/l,2024-03-04,2029-03-04
+210,NARAHYPO 505 SL,Insektisida,SL,Dimehipo,505,g/l,padi,penggerek batang,2,ml/l,2023-02-08,2028-02-08
+211,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+212,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+213,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+214,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+215,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+216,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+217,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+218,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,penggerek batang,"0,5 - 1,0",ml/l,2023-08-28,2028-08-28
+219,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+220,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+221,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+222,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+223,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+224,NUMECTIN 20 EC,Insektisida,EC,abamektin,20,g/l,padi,penggerek batang,2,ml/l,2024-11-18,2029-11-18
+225,OBLIVION 180/120 SC,Insektisida,SC,indoksakarb,120,g/l,padi,penggerek batang,2.25,ml/l,2021-10-12,2026-10-12
+226,OBLIVION 180/120 SC,Insektisida,SC,indoksakarb,120,g/l,padi,penggerek batang,"2,25",ml/l,2025-11-13,2030-11-13
+227,OBLIVION 180/120 SC,Insektisida,SC,klorfenapir,180,g/l,padi,penggerek batang,2.25,ml/l,2021-10-12,2026-10-12
+228,OBLIVION 180/120 SC,Insektisida,SC,klorfenapir,180,g/l,padi,penggerek batang,"2,25",ml/l,2025-11-13,2030-11-13
+229,PENALTY 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,2,ml/l,2023-04-26,2028-04-26
+230,"PESTOR 20,02 EC",Insektisida,EC,Azadirachtin,"0,02",g/l,padi,penggerek batang,10,ml/liter,2024-08-09,2029-08-09
+231,"PESTOR 20,02 EC",Insektisida,EC,Eugenol,20,g/l,padi,penggerek batang,10,ml/liter,2024-08-09,2029-08-09
+232,PETROFUR 3 G,Insektisida, G,karbofuran,3,%,padi,penggerek batang,25.5,kg/ha,2025-09-26,2030-09-26
+233,PLEMAX 240/80 SC,Insektisida,SC,Indoksakarb,240,g/l,padi,penggerek batang,"1,2",ml/l,2024-08-09,2029-08-09
+234,PLEMAX 240/80 SC,Insektisida,SC,Novaluron,80,g/l,padi,penggerek batang,"1,2",ml/l,2024-08-09,2029-08-09
+235,PLUSH 2/58 WP,Insektisida,WP,Imidakloprid,2,%,padi,penggerek batang,1,kg/ha,2024-11-18,2029-11-18
+236,PLUSH 2/58 WP,Insektisida,WP,Imidakloprid,2,%,padi,penggerek batang,1.25,kg/ha,2024-11-18,2029-11-18
+237,PLUSH 2/58 WP,Insektisida,WP,Monosultap,58,%,padi,penggerek batang,1,kg/ha,2024-11-18,2029-11-18
+238,PLUSH 2/58 WP,Insektisida,WP,Monosultap,58,%,padi,penggerek batang,1.25,kg/ha,2024-11-18,2029-11-18
+239,PORYZA 400 SL,Insektisida,SL,Dimehypo,400,g/l,padi,penggerek batang,"281,25",ml/ha,2024-03-05,2029-03-05
+240,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+241,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+242,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+243,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+244,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+245,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+246,PREVATHON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2022-01-14,2027-01-14
+247,PRIMA-FUR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,20,kg/ha,2023-08-28,2028-08-28
+248,PRIMA-FUR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,20,kg/ha,2023-08-28,2028-08-28
+249,PRIMA-HIPO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,1.125,ml/l,2024-08-09,2029-08-09
+250,PRIMA-PRO 55 SC,Insektisida,SC,Fipronil,55,g/l,padi,penggerek batang,2,ml/l,2023-08-28,2028-08-28
+251,PRIMAMECT 200 SC,Insektisida,SC,Emamektin Benzoat,50,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+252,PRIMAMECT 200 SC,Insektisida,SC,Indoksakarb,150,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+253,PROTRUDE 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2025-07-11,2030-07-11
+254,PURDAN PLUS 3/3 GR,Insektisida,GR,dimehipo,3,%,padi,penggerek batang,15,kg/ha,2024-03-04,2029-03-04
+255,PURDAN PLUS 3/3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,15,kg/ha,2024-03-04,2029-03-04
+256,R-JEN 100 SC,Insektisida,SC,Fipronil,100,g/l,padi,penggerek batang,"1,5",ml/l,2024-11-18,2029-11-18
+257,REGENT 0.3 GR,Insektisida,GR,Fipronil,0.3,%,padi,penggerek batang,10,kg/ha,2026-04-20,2031-04-20
+258,RESPECT 200 EC,Insektisida,EC,karbosulfan,200,g/l,padi,penggerek batang,"1,5 - 2",ml/l,2023-04-26,2028-04-26
+259,SAGRI-CLEAN 150/350 SC,Insektisida,SC,fipronil,150,g/l,padi,penggerek batang,"0,5",ml/l,2024-08-09,2029-08-09
+260,SAGRI-CLEAN 150/350 SC,Insektisida,SC,metoksifenosida,350,g/l,padi,penggerek batang,"0,5",ml/l,2024-08-09,2029-08-09
+261,SANDIMAS 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,3,ml/l,2026-01-20,2031-01-20
+262,SIDAMEC 20 EC,Insektisida,EC,abamektin,20,g/l,padi,penggerek batang,1,ml/l,2025-09-26,2030-09-26
+263,SIDATAN 410 SL,Insektisida,SL,Dimehipo,410,g/l,padi,penggerek batang,1,ml/l,2022-01-14,2027-01-14
+264,SIDATAN XR 525 SL,Insektisida,SL,Dimehipo,525,g/l,padi,penggerek batang,0.75,ml/l,2022-11-18,2027-11-18
+265,SPINOTAM 480 SC,Insektisida,SC,Spinosad,480,g/l,padi,penggerek batang,"1,5",ml/l,2025-02-17,2030-02-17
+266,SPONTAN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,3,ml/l,2024-03-05,2029-03-05
+267,SPONTANKING 400 SL,Insektisida,SL,Monosultap,400,g/l,padi,penggerek batang,3,ml/l,2022-06-27,2027-06-27
+268,SPONTANKING 400 SL,Insektisida,SL,Monosultap,400,g/l,padi,penggerek batang,3,ml/l,2022-06-27,2027-06-27
+269,SPONTANKING 400 SL,Insektisida,SL,Monosultap,400,g/l,padi,penggerek batang,3,ml/l,2022-06-27,2027-06-27
+270,SPONTAS 450 SL,Insektisida,SL,dimehipo,450,g/l,padi,penggerek batang,2.25,ml/l,2022-10-04,2027-10-04
+271,SPORTIF 505 SL,Insektisida,SL,Dimehypo,505,g/l,padi,penggerek batang,1,ml/l,2025-02-17,2030-02-17
+272,STARGATE 600 SC,Insektisida,SC,Klotianidin,600,g/l,padi,penggerek batang,1,ml/l,2024-09-19,2029-09-19
+273,STARLET 400 SL,Insektisida,SL,Bisultap,400,g/l,padi,penggerek batang,2,ml/l,2022-12-05,2027-12-05
+274,STARLET 400 SL,Insektisida,SL,Bisultap,400,g/l,padi,penggerek batang,2,ml/l,2022-12-05,2027-12-05
+275,STUNTMAN 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,penggerek batang,1,ml/l,2024-03-05,2029-03-05
+276,SUPEMEC 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,2,ml/l,2024-03-05,2029-03-05
+277,Tecam 80 WG,Insektisida,WG,Fipronil,80,%,padi,penggerek batang,150,g/ha,2023-02-08,2028-02-08
+278,TENANO 300/60 SC,Insektisida,SC,Methoxyfenozide,300,g/l,padi,penggerek batang,"1,5",ml/l,2025-02-17,2030-02-17
+279,TENANO 300/60 SC,Insektisida,SC,Spinetoram,60,g/l,padi,penggerek batang,"1,5",ml/l,2025-02-17,2030-02-17
+280,TERRA 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,"2,25",ml/l,2026-01-20,2031-01-20
+281,TIMBER 50/15 WP,Insektisida,WP,Buprofezin,15,%,padi,penggerek batang,"0,75",g/l,2025-02-17,2030-02-17
+282,TIMBER 50/15 WP,Insektisida,WP,Monosultap,50,%,padi,penggerek batang,"0,75",g/l,2025-02-17,2030-02-17
+283,TRISULA 450 SL,Insektisida,SL,monosultap,450,g/l,padi,penggerek batang,"1,5",ml/l,2024-03-04,2029-03-04
+284,VAYEGO 200 SC,Insektisida,SC,tetraniliprol,200,g/l,padi,penggerek batang,1,ml/l,2024-09-19,2029-09-19
+285,VAYEGO 200 SC,Insektisida,SC,tetraniliprol,200,g/l,padi,penggerek batang,1,ml/l,2024-09-19,2029-09-19
+286,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+287,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+288,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+289,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+290,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+291,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+292,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+293,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+294,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+295,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+296,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+297,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+298,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+299,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+300,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+301,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+302,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+303,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+304,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+305,VIRTAKO 300 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+306,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+307,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+308,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+309,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+310,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+311,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+312,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+313,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+314,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+315,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+316,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+317,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+318,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+319,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+320,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+321,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+322,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+323,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+324,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,100 - 150,ml/ha,2022-06-27,2027-06-27
+325,VIRTAKO 300 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,150,ml/ha,2022-06-27,2027-06-27
+326,VISTA 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,3,ml/l,2024-09-19,2029-09-19
+327,WINDER 100 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,"0,5",ml/l,2025-11-13,2030-11-13
+328,WINDER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,penggerek batang,100,g/ha,2023-04-26,2028-04-26
+329,WINDER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,penggerek batang,100,g/ha,2023-04-26,2028-04-26
+330,WINDER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,penggerek batang,100,g/ha,2023-04-26,2028-04-26
+331,WINDER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,penggerek batang,100,g/ha,2023-04-26,2028-04-26
+332,WINDER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,penggerek batang,100,g/ha,2023-04-26,2028-04-26
+333,WINDER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,penggerek batang,100,g/ha,2023-04-26,2028-04-26
+334,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+335,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+336,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+337,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+338,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+339,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+340,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+341,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+342,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+343,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+344,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+345,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+346,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+347,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,penggerek batang,1,ml/l,2023-08-28,2028-08-28
+348,XENON 20/60 WG,Insektisida,WG,Nitempiram,20,%,padi,penggerek batang,"0,75",g/l,2024-08-09,2029-08-09
+349,XENON 20/60 WG,Insektisida,WG,Pimetrozin,60,%,padi,penggerek batang,"0,75",g/l,2024-08-09,2029-08-09
+350,AGADI 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,1,ml/l,2024-09-19,2029-09-19
+351,DETOP 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2026-01-20,2031-01-20
+352,DEFRON 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,1,ml/l,2025-07-11,2030-07-11
+353,KLOPER 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,penggerek batang,"1,5",ml/l,2023-08-28,2028-08-28
+354,MARSHAL 5 GR,Insektisida,GR,Karbosulfan,5,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+355,MARSHAL 5 GR,Insektisida,GR,Karbosulfan,5,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+356,MARSHAL 5 GR,Insektisida,GR,Karbosulfan,5,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+357,MARSHAL 5 GR,Insektisida,GR,Karbosulfan,5,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+358,MARSHAL 5 GR,Insektisida,GR,Karbosulfan,5,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+359,MARSHAL 5 GR,Insektisida,GR,Karbosulfan,5,%,padi,penggerek batang,12,kg/ha,2022-10-04,2027-10-04
+360,PANDAWA 50/10 WP,Insektisida,WP,Bisultap,50,%,padi,penggerek batang,4,g/l,2024-09-19,2029-09-19
+361,PANDAWA 50/10 WP,Insektisida,WP,Tiametoksam,10,%,padi,penggerek batang,4,g/l,2024-09-19,2029-09-19
+362,PANZER 290 SL,Insektisida,SL,Bisultap,290,g/l,padi,penggerek batang,"0,56",l/ha,2023-02-08,2028-02-08
+363,PANZER 290 SL,Insektisida,SL,Bisultap,290,g/l,padi,penggerek batang,"0,56",l/ha,2023-02-08,2028-02-08
+364,REATIS 480 FS,Insektisida,FS,tetraniliprol,480,g/l,padi,penggerek batang,4,ml/kg,2024-09-19,2029-09-19
+365,SAPPORO 52 EC,Insektisida,EC,Emammektin Benzoat,52,g/l,padi,penggerek batang,2,ml/l,2025-02-17,2030-02-17
+366,"SIKLON 5,7 WG",Insektisida,WG,emamectin benzoate,"5,7",%,padi,penggerek batang,1,g/l,2023-02-08,2028-02-08
+367,SPARTAN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"0,75",ml/l,2024-11-18,2029-11-18
+368,STARGATE 0.5 GR,Insektisida,GR,Klotianidin,0.5,%,padi,penggerek batang,36,kg/ha,2025-02-17,2030-02-17
+369,TSUBAME 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,250,ml/ha,2023-08-28,2028-08-28
+370,DEMETER 5.7 SG,Insektisida,SG,Emamektin benzoat,5.7,%,padi,penggerek batang,1,g/l,2025-09-26,2030-09-26
+371,ELICOR 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2023-02-08,2028-02-08
+372,ELICOR 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,3,ml/l,2023-02-08,2028-02-08
+373,ENFUSE 200 SC,Insektisida,SC,Klorantraniliprol,200,g/l,padi,penggerek batang,1,ml/l,2023-02-08,2028-02-08
+374,PRIMA-TE 150 EC,Insektisida,EC,Indoksakarb,150,g/l,padi,penggerek batang,"0,5",ml/l,2026-04-20,2031-04-20
+375,BALISTIC 50 SC,Insektisida,SC,fipronil,50,g/l,padi,penggerek batang,2,ml/l,2024-09-19,2029-09-19
+376,BT-PLUS WP,Insektisida,WP,Bacillus thuringiensis,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+377,BT-PLUS WP,Insektisida,WP,Bacillus thuringiensis,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+378,BT-PLUS WP,Insektisida,WP,Bacillus thuringiensis,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+379,BT-PLUS WP,Insektisida,WP,Bacillus thuringiensis,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+380,BT-PLUS WP,Insektisida,WP,Bacillus thuringiensis,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+381,BT-PLUS WP,Insektisida,WP,Bacillus thuringiensis,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+382,BT-PLUS WP,Insektisida,WP,Serratia marcescens,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+383,BT-PLUS WP,Insektisida,WP,Serratia marcescens,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+384,BT-PLUS WP,Insektisida,WP,Serratia marcescens,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+385,BT-PLUS WP,Insektisida,WP,Serratia marcescens,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+386,BT-PLUS WP,Insektisida,WP,Serratia marcescens,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+387,BT-PLUS WP,Insektisida,WP,Serratia marcescens,1 x 10^8,cfu/gr,padi,penggerek batang,"1,1",g/l,2022-10-04,2027-10-04
+388,CALYPSO 480 SC,Insektisida,SC,tiakloprid (thiacloprid),480,g/l,padi,penggerek batang,2,ml/l,2025-07-11,2030-07-11
+389,CARBAFUR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,15,kg/ha,2024-09-19,2029-09-19
+390,CHLORADINO PLUS 10/40 WG,Insektisida,WG,Dinotefuran,40,%,padi,penggerek batang,"0,75",g/l,2025-07-11,2030-07-11
+391,CHLORADINO PLUS 10/40 WG,Insektisida,WG,Klorantraniliprol,10,%,padi,penggerek batang,"0,75",g/l,2025-07-11,2030-07-11
+392,CHLOTAP 200/20 SC,Insektisida,SC,Klorantraniliprol,20,g/l,padi,penggerek batang,3,ml/l,2026-01-20,2031-01-20
+393,CHLOTAP 200/20 SC,Insektisida,SC,Monosultap,200,g/l,padi,penggerek batang,3,ml/l,2026-01-20,2031-01-20
+394,CONTROL 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2023-02-08,2028-02-08
+395,COPTEX PLUS 100/20 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,penggerek batang,"0,75",ml/l,2025-02-17,2030-02-17
+396,COPTEX PLUS 100/20 SC,Insektisida,SC,Spinosad,20,g/l,padi,penggerek batang,"0,75",ml/l,2025-02-17,2030-02-17
+397,COSKO 120/35 SC,Insektisida,SC,emamektin benzoat,35,g/l,padi,penggerek batang,1,ml/l,2026-04-20,2031-04-20
+398,COSKO 120/35 SC,Insektisida,SC,klorantraniliprol,120,g/l,padi,penggerek batang,1,ml/l,2026-04-20,2031-04-20
+399,ELGON 150 EC,Insektisida,EC,INDOKSAKARB,150,g/l,padi,penggerek batang,1,ml/l,2023-02-08,2028-02-08
+400,ELGON 150 EC,Insektisida,EC,INDOKSAKARB,150,g/l,padi,penggerek batang,1,ml/l,2023-02-08,2028-02-08
+401,EMACEN 30 EC,Insektisida,EC,Emamektin benzoat,30,g/l,padi,penggerek batang,1,ml/l,2023-02-08,2028-02-08
+402,EMACEN 30 EC,Insektisida,EC,emamektin benzoat,30,g/l,padi,penggerek batang,1,ml/l,2023-02-08,2028-02-08
+403,EMASPID 43/171.5 SC,Insektisida,SC,Emamektin benzoat,43,g/l,padi,penggerek batang,1,ml/l,2025-11-13,2030-11-13
+404,EMASPID 43/171.5 SC,Insektisida,SC,Spinosad,171.5,g/l,padi,penggerek batang,1,ml/l,2025-11-13,2030-11-13
+405,EVISET 50 SP,Insektisida,SP,tiosiklam hidrogen oksalat,50,%,padi,penggerek batang,"0,75",kg/ha,2023-02-08,2028-02-08
+406,"FERTERRA 0,4 GR",Insektisida,GR,Klorantraniliprol,"0,4",%,padi,penggerek batang,"7,5",kg/ha,2024-08-09,2029-08-09
+407,FOLTUS 400 SL,Insektisida,SL,dimehipo,400,g/l,padi,penggerek batang,3,ml/l,2025-02-17,2030-02-17
+408,FOLTUS PLUS 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,2,ml/l,2025-07-11,2030-07-11
+409,HULK 20 SG,Insektisida,SG,Dinotefuran,20,%,padi,penggerek batang,2,g/l,2025-09-26,2030-09-26
+410,HYPOLAX 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,3,ml/l,2021-11-18,2026-11-18
+411,INCIPIO 200 SC,Insektisida,SC,Isocycloseram,200,g/l,padi,penggerek batang,"1,2",ml/l,2023-08-28,2028-08-28
+412,INCIPIO 200 SC,Insektisida,SC,Isocycloseram,200,g/l,padi,penggerek batang,"1,2",ml/l,2023-08-28,2028-08-28
+413,INCIPIO 200 SC,Insektisida,SC,Isocycloseram,200,g/l,padi,penggerek batang,"1,2",ml/l,2023-08-28,2028-08-28
+414,INCIPIO 200 SC,Insektisida,SC,Isocycloseram,200,g/l,padi,penggerek batang,"1,2",ml/l,2023-08-28,2028-08-28
+415,INDOHIPO 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,penggerek batang,2.25,ml/l,2025-09-26,2030-09-26
+416,JAGONA 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,3,ml/l,2024-08-09,2029-08-09
+417,KLIMAX 20 EC,Insektisida,EC,Abamektin,20,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+418,KRATON 200 SC,Insektisida,SC,Klorantraniliprol,200,g/l,padi,penggerek batang,1,ml/l,2025-09-26,2030-09-26
+419,MASTERSPIN PLUS 300/60 SC,Insektisida,SC,Metoksifenozida,300,g/l,padi,penggerek batang,1,ml/l,2025-07-11,2030-07-11
+420,MASTERSPIN PLUS 300/60 SC,Insektisida,SC,Spinetoram,60,g/l,padi,penggerek batang,1,ml/l,2025-07-11,2030-07-11
+421,MAZOTAM 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"1,5",ml/l,2025-02-17,2030-02-17
+422,META-HIPO 400 SL,Insektisida,SL,DIMEHIPO,400,g/l,padi,penggerek batang,2,ml/l,2024-03-05,2029-03-05
+423,MITRIN 320/32 SC,Insektisida,SC,Abamektin,32,g/l,padi,penggerek batang,2,ml/l,2023-04-26,2028-04-26
+424,MITRIN 320/32 SC,Insektisida,SC,Abamektin,32,g/l,padi,penggerek batang,2,ml/l,2023-04-26,2028-04-26
+425,MITRIN 320/32 SC,Insektisida,SC,Imidakloprid,320,g/l,padi,penggerek batang,2,ml/l,2023-04-26,2028-04-26
+426,MITRIN 320/32 SC,Insektisida,SC,Imidakloprid,320,g/l,padi,penggerek batang,2,ml/l,2023-04-26,2028-04-26
+427,MONOTHON 600 SC,Insektisida,SC,Klorantraniliprol,600,g/l,padi,penggerek batang,"0,5",ml/l,2025-09-26,2030-09-26
+428,MORIOX 100/150 SC,Insektisida,SC,Dinotefuran,100,g/l,padi,penggerek batang,1,ml/l,2024-08-09,2029-08-09
+429,MORIOX 100/150 SC,Insektisida,SC,Flonikamid,150,g/l,padi,penggerek batang,1,ml/l,2024-08-09,2029-08-09
+430,"NEOFRON 0,5 GR",Insektisida,GR,Fipronil,"0,5",%,padi,penggerek batang,10,kg/ha,2024-03-05,2029-03-05
+431,NILIPRO 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,1,ml/l,2026-01-20,2031-01-20
+432,NUPRID 600 FS,Insektisida,FS,imidakloprid,600,g/l,padi,penggerek batang,3,ml/kg benih,2025-02-17,2030-02-17
+433,OMNI-FUR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,penggerek batang,20,kg/ha,2023-04-26,2028-04-26
+434,Onact 30 ME,Insektisida,ME,isoflualanam,30,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+435,Onact 30 ME,Insektisida,ME,isoflualanam,30,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+436,Onact 30 ME,Insektisida,ME,isoflualanam,30,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+437,PALTON 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,2,ml/l,2026-01-20,2031-01-20
+438,PREVATHON PRO 200 SC,Insektisida,SC,Klorantraniliprol,200,g/l,padi,penggerek batang,"0,75",ml/l,2023-02-08,2028-02-08
+439,PREVATHON PRO 200 SC,Insektisida,SC,Klorantraniliprol,200,g/l,padi,penggerek batang,"0,75",ml/l,2023-02-08,2028-02-08
+440,PRIMADINE 450 SL,Insektisida,SL,dimehipo,450,g/l,padi,penggerek batang,"2,25",ml/l,2022-06-27,2027-06-27
+441,PROMECTIN 18 EC,Insektisida,EC,abamektin,18,g/l,padi,penggerek batang,2,ml/l,2024-03-05,2029-03-05
+442,QILUSPIN 480 SC,Insektisida,SC,Spinosad,480,g/l,padi,penggerek batang,1,ml/l,2025-07-11,2030-07-11
+443,QILUSPIN PLUS 6/4 WG,Insektisida,WG,Emamektin benzoat,4,%,padi,penggerek batang,1,g/l,2024-11-18,2029-11-18
+444,QILUSPIN PLUS 6/4 WG,Insektisida,WG,Spinosad,6,%,padi,penggerek batang,1,g/l,2024-11-18,2029-11-18
+445,RG 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,"1,5",ml/l,2024-11-18,2029-11-18
+446,RIKA 25 EC,Insektisida,EC,Abamektin,25,g/l,padi,penggerek batang,"1,5",ml/l,2025-07-11,2030-07-11
+447,RITA 38 EC,Insektisida,EC,Abamektin,38,g/l,padi,penggerek batang,"1,5",ml/l,2025-07-11,2030-07-11
+448,Rockrole 100/200 SC,Insektisida,SC,Klorantraniliprol,100,g/l,padi,penggerek batang,"0,4",ml/l,2025-07-11,2030-07-11
+449,Rockrole 100/200 SC,Insektisida,SC,Tiametoksam,200,g/l,padi,penggerek batang,"0,4",ml/l,2025-07-11,2030-07-11
+450,RynaxPlus 100/300 SC,Insektisida,SC,Klorantraniliprol,100,g/l,padi,penggerek batang,2,ml/l,2026-04-20,2031-04-20
+451,RynaxPlus 100/300 SC,Insektisida,SC,Klotianidin,300,g/l,padi,penggerek batang,2,ml/l,2026-04-20,2031-04-20
+452,SENSATION 100/200 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,penggerek batang,1,ml/l,2026-01-20,2031-01-20
+453,SENSATION 100/200 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,penggerek batang,1,ml/l,2026-01-20,2031-01-20
+454,SHENZI 35 WG,Insektisida,WG,Klorantraniliprol,35,%,padi,penggerek batang,100,g/ha,2024-03-05,2029-03-05
+455,SHENZI 35 WG,Insektisida,WG,Klorantraniliprol,35,%,padi,penggerek batang,100,g/ha,2024-03-05,2029-03-05
+456,SHENZI SMART 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+457,SHOMEI 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,2,ml/l,2024-03-05,2029-03-05
+458,STADIUM 18 EC,Insektisida,EC,Abamektin,18,g/l,padi,penggerek batang,1,ml/l,2024-03-05,2029-03-05
+459,SUTORO 30 EC,Insektisida,EC,Emamektin Benzoat,30,g/l,padi,penggerek batang,2,ml/l,2025-02-17,2030-02-17
+460,TAKUMI 20 WG,Insektisida,WG,Flubendiamida,20,%,padi,penggerek batang,250,g/ha,2024-03-04,2029-03-04
+461,TAKUMI 20 WG,Insektisida,WG,Flubendiamida,20,%,padi,penggerek batang,250,g/ha,2024-03-04,2029-03-04
+462,TAKUMI 20 WG,Insektisida,WG,Flubendiamida,20,%,padi,penggerek batang,250,g/ha,2024-03-04,2029-03-04
+463,TAKUMI 20 WG,Insektisida,WG,Flubendiamida,20,%,padi,penggerek batang,250,g/ha,2024-03-04,2029-03-04
+464,TALOS 150/30 SC,Insektisida,SC,klorfenapir,150,g/l,padi,penggerek batang,"1,5",ml/l,2024-09-19,2029-09-19
+465,TALOS 150/30 SC,Insektisida,SC,lufenuron,30,g/l,padi,penggerek batang,"1,5",ml/l,2024-09-19,2029-09-19
+466,TENNO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,2,ml/l,2023-08-28,2028-08-28
+467,TOPNIL 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,penggerek batang,1,ml/l,2024-03-05,2029-03-05
+468,TRIACTIVE 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,penggerek batang,"1,5",ml/l,2025-02-17,2030-02-17
+469,TROOP 20 WG,Insektisida,WG,Dinotefuran,20,%,padi,penggerek batang,2,g/l,2024-03-05,2029-03-05
+470,TUSOO 480 SC,Insektisida,SC,Tiakloprid,480,g/l,padi,penggerek batang,2,ml/l,2024-03-04,2029-03-04
+471,TWIKLE 55/5 WG,Insektisida,WG,Abamektin,5,%,padi,penggerek batang,1,g/l,2024-11-18,2029-11-18
+472,TWIKLE 55/5 WG,Insektisida,WG,Monosultap,55,%,padi,penggerek batang,1,g/l,2024-11-18,2029-11-18
+473,ULTIMARAC 360 SC,Insektisida,SC,Klorfenapir,360,g/l,padi,penggerek batang,"1,5",ml/l,2025-07-11,2030-07-11
+474,VAYEGO QUANTUM 120 / 360 SC,Insektisida,SC,tetraniliprol,120,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+475,VAYEGO QUANTUM 120 / 360 SC,Insektisida,SC,tiakloprid,360,g/l,padi,penggerek batang,1,ml/l,2023-04-26,2028-04-26
+476,VENTURA 3 GR,Insektisida,GR,karbofuran,3,%,padi,penggerek batang,10,kg/ha,2024-09-19,2029-09-19
+477,VERTHON 50 SC,Insektisida,SC,klorantraniliprol,50,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+478,YAMITAP 2/78 WP,Insektisida,WP,Imidacloprid,2,%,padi,penggerek batang,1,g/l,2025-11-13,2030-11-13
+479,YAMITAP 2/78 WP,Insektisida,WP,Monosultap,78,%,padi,penggerek batang,1,g/l,2025-11-13,2030-11-13
+480,Zytor 30/60 SE,Insektisida,SE,isoflualanam,30,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+481,Zytor 30/60 SE,Insektisida,SE,isoflualanam,30,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+482,Zytor 30/60 SE,Insektisida,SE,isoflualanam,30,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+483,Zytor 30/60 SE,Insektisida,SE,klorantraniliprol,60,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+484,Zytor 30/60 SE,Insektisida,SE,klorantraniliprol,60,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+485,Zytor 30/60 SE,Insektisida,SE,klorantraniliprol,60,g/l,padi,penggerek batang,2,ml/l,2025-11-13,2030-11-13
+486,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,5",ml/ha,2022-10-04,2027-10-04
+487,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,5",ml/ha,2022-10-04,2027-10-04
+488,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,5",ml/ha,2022-10-04,2027-10-04
+489,MANUVER 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,penggerek batang,"1,5",ml/ha,2022-10-04,2027-10-04
+490,AGADI 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,2,ml/l,2024-09-19,2029-09-19
+491,AJI-DOR 30 WP,Insektisida,WP,Imidakloprid,30,%,padi,walang sangit,2,g/l,2024-03-05,2029-03-05
+492,ASMEC 36 EC,Insektisida,EC,Abamektin,36,g/l,padi,walang sangit,"1,5",ml/l,2023-08-28,2028-08-28
+493,BALISTIC 50 SC,Insektisida,SC,fipronil,50,g/l,padi,walang sangit,"1,5",ml/l,2024-09-19,2029-09-19
+494,BAYCARB 500 EC,Insektisida,EC,fenobukarb,500,g/l,padi,walang sangit,1.5,ml/l,2025-09-26,2030-09-26
+495,BESVIDOR 25 WP,Insektisida,WP,Imidakloprid,25,%,padi,walang sangit,1 - 2,g/l,2025-09-26,2030-09-26
+496,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+497,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+498,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+499,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+500,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+501,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+502,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+503,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+504,BIOGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,"0,5",l/ha,2022-12-05,2027-12-05
+505,CHEVRO 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,walang sangit,0.5,g/l,2022-12-05,2027-12-05
+506,CHEVRO 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,walang sangit,0.5,g/l,2022-12-05,2027-12-05
+507,CHEVRO 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,walang sangit,0.5,g/l,2022-12-05,2027-12-05
+508,CHEVRO 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,walang sangit,0.5,g/l,2022-12-05,2027-12-05
+509,Dharmabas 500 EC,Insektisida,EC,BPMC,500,g/l,padi,walang sangit,2,ml/l,2022-12-05,2027-12-05
+510,Dharmafur 3 GR,Insektisida,GR,karbofuran,3,%,padi,walang sangit,15,kg/ha,2022-12-05,2027-12-05
+511,GRETA 500 EC,Insektisida,EC,BPMC,500,g/l,padi,walang sangit,2,ml/l,2024-03-04,2029-03-04
+512,GUNTUR 75 WP,Insektisida,WP,Siromazin,75,%,padi,walang sangit,2,g/l,2023-02-08,2028-02-08
+513,HOPPER 500 EC,Insektisida,EC,BPMC,500,g/l,padi,walang sangit,1.125,ml/l,2023-04-26,2028-04-26
+514,HULK 20 SG,Insektisida,SG,Dinotefuran,20,%,padi,walang sangit,1,g/l,2025-09-26,2030-09-26
+515,KARIBIAN 18 EC,Insektisida,EC,abamektin,18,g/l,padi,walang sangit,2,ml/l,2023-04-26,2028-04-26
+516,KENTARA 200 EC,Insektisida,EC,Karbosulfan,200,g/l,padi,walang sangit,2,ml/l,2024-08-09,2029-08-09
+517,MARSHAL 200 SC,Insektisida,SC,Karbosulfan,200,g/l,padi,walang sangit,2,ml/l,2022-10-04,2027-10-04
+518,MEOTHRIN 50 EC,Insektisida,EC,Fenpropatrin,50,g/l,padi,walang sangit,0.75,ml/l,2023-08-28,2028-08-28
+519,METARIZEP WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+520,METARIZEP WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+521,METARIZEP WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+522,METARIZEP WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+523,METARIZEP WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+524,METARIZEP WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+525,METARIZEP WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+526,METARIZEP WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+527,METARIZEP WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+528,METARIZEP WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/gr,padi,walang sangit,2,g/l,2022-10-04,2027-10-04
+529,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+530,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+531,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+532,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+533,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+534,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+535,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+536,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,walang sangit,"0,75 - 1,5",ml/l,2023-08-28,2028-08-28
+537,PENALTY 50 SC,Insektisida,SC,fipronil,50,g/l,padi,walang sangit,2,ml/l,2023-04-26,2028-04-26
+538,Plenum 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,walang sangit,250-300,g/ha,2024-03-05,2029-03-05
+539,PROMOCYODAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,walang sangit,17,kg/ha,2023-02-08,2028-02-08
+540,PROMODAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,walang sangit,17,kg/ha,2022-12-05,2027-12-05
+541,PROMODAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,walang sangit,17,kg/ha,2022-12-05,2027-12-05
+542,REGENT 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,walang sangit,1,ml/l,2025-09-26,2030-09-26
+543,RESPECT 200 EC,Insektisida,EC,karbosulfan,200,g/l,padi,walang sangit,"1,5 - 2",ml/l,2023-04-26,2028-04-26
+544,SAWARNA 18 EC,Insektisida,EC,abamektin,18,g/l,padi,walang sangit,2,ml/l,2023-04-26,2028-04-26
+545,SIDABAS 500 EC,Insektisida,EC,BPMC,500,g/l,padi,walang sangit,4,ml/l,2025-09-26,2030-09-26
+546,SIDATAN 410 SL,Insektisida,SL,Dimehipo,410,g/l,padi,walang sangit,0.75,ml/l,2022-01-14,2027-01-14
+547,SUMIALPHA 25 EC,Insektisida,EC,Esvenfalerat,25,g/l,padi,walang sangit,1,ml/l,2023-04-26,2028-04-26
+548,TENCHU 20 SG,Insektisida,SG,dinotefuron,20,%,padi,walang sangit,"0,5",g/l,2025-09-26,2030-09-26
+549,BASSA 500 EC,Insektisida,EC,BPMC,500,g/l,padi,walang sangit,2,ml/l,2026-04-20,2031-04-20
+550,ABAKTIN 18 EC,Insektisida,EC,Abamectin,18,%,padi,wereng batang cokelat,2,ml/l,2024-03-05,2029-03-05
+551,ABUKI 50 SL,Insektisida,SL,Imidakloprid,50,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+552,AGENT 50 SC,Insektisida,SC,fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+553,AGXAMET 25 WG,Insektisida,WG,Tiametoksam,25,%,padi,wereng batang cokelat,0.15,g/l,2022-12-05,2027-12-05
+554,AGXINDOR 30 WG,Insektisida,WG,Indoksakarb,30,%,padi,wereng batang cokelat,1,g/l,2024-09-19,2029-09-19
+555,AKESS 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-01-14,2027-01-14
+556,AKESS 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-01-14,2027-01-14
+557,ALAMO 350 SC,Insektisida,SC,Imidakloprid,350,g/l,padi,wereng batang cokelat,"112,5",ml/ha,2023-04-26,2028-04-26
+558,ALDES 50/10 WG,Insektisida,WG,Fipronil,10,%,padi,wereng batang cokelat,1,g/l,2022-01-14,2027-01-14
+559,ALDES 50/10 WG,Insektisida,WG,Fipronil,10,%,padi,wereng batang cokelat,1,g/l,2022-01-14,2027-01-14
+560,ALDES 50/10 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-01-14,2027-01-14
+561,ALDES 50/10 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-01-14,2027-01-14
+562,ALPHADINE 6 GR,Insektisida,GR,dimehipo,6,%,padi,wereng batang cokelat,12,kg/ha,2022-06-27,2027-06-27
+563,"AMFIPRON 0,3 GR",Insektisida,GR,Fipronil,"0,3",%,padi,wereng batang cokelat,25,kg/ha,2023-04-26,2028-04-26
+564,AMURON 20/50 EC,Insektisida,EC,Emamektin benzoat,20,g/l,padi,wereng batang cokelat,1,ml/l,2024-03-04,2029-03-04
+565,AMURON 20/50 EC,Insektisida,EC,Heksaflumuron,50,g/l,padi,wereng batang cokelat,1,ml/l,2024-03-04,2029-03-04
+566,ANDROMEDA 50/100 EC,Insektisida,EC,Abamektin,50,g/l,padi,wereng batang cokelat,1,ml/l,2024-08-09,2029-08-09
+567,ANDROMEDA 50/100 EC,Insektisida,EC,Asetamiprid,100,g/l,padi,wereng batang cokelat,1,ml/l,2024-08-09,2029-08-09
+568,Aneto 50 EC,Insektisida,EC,fipronil,50,g/l,padi,wereng batang cokelat,"0,75",l/ha,2024-11-18,2029-11-18
+569,APPLAUD 100 EC,Insektisida,EC,Buprofezin,100,g/l,padi,wereng batang cokelat,"1,5",ml/liter,2022-12-05,2027-12-05
+570,APPLAUD 100 EC,Insektisida,EC,Buprofezin,100,g/l,padi,wereng batang cokelat,"1,5",ml/liter,2022-12-05,2027-12-05
+571,APPLAUD 100 EC,Insektisida,EC,Buprofezin,100,g/l,padi,wereng batang cokelat,"1,5",ml/liter,2022-12-05,2027-12-05
+572,ASPRIL 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-06-27,2027-06-27
+573,ASPRIL 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-06-27,2027-06-27
+574,ASPRIL 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-06-27,2027-06-27
+575,ASSOCIATE 40/160 SC,Insektisida,SC,emamektin benzoat,40,g/l,padi,wereng batang cokelat,1,ml/l,2025-11-13,2030-11-13
+576,ASSOCIATE 40/160 SC,Insektisida,SC,indosakarb,160,g/l,padi,wereng batang cokelat,1,ml/l,2025-11-13,2030-11-13
+577,ASTERPIRAM 120 EC,Insektisida,EC,Nitenpyram,120,g/l,padi,wereng batang cokelat,2,ml/l,2025-02-17,2030-02-17
+578,AVIDOR 25 WP,Insektisida,WP,imidakloprid,25,%,padi,wereng batang cokelat,"1,5",g/l,2026-01-20,2031-01-20
+579,AVIMAX 20/100 EC,Insektisida,EC,abamektin,20,g/l,padi,wereng batang cokelat,"0,25",ml/l,2024-11-18,2029-11-18
+580,AVIMAX 20/100 EC,Insektisida,EC,imidakloprid,100,g/l,padi,wereng batang cokelat,"0,25",ml/l,2024-11-18,2029-11-18
+581,AVOS 525 SL,Insektisida,SL,Dimehipo,525,g/l,padi,wereng batang cokelat,"1,5",ml/l,2025-07-11,2030-07-11
+582,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+583,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+584,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+585,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+586,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+587,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+588,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+589,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+590,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+591,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+592,BADIK 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,"0,75 - 1",ml/l,2022-10-04,2027-10-04
+593,BALTIKO 68/2 WP,Insektisida,WP,imidakloprid,2,%,padi,wereng batang cokelat,"1,5",ml/l,2026-04-20,2031-04-20
+594,BALTIKO 68/2 WP,Insektisida,WP,monosultap,68,%,padi,wereng batang cokelat,"1,5",ml/l,2026-04-20,2031-04-20
+595,BESHIPO 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+596,BESTKING 60/20 WG,Insektisida,WG,Nitenpiram,20,%,padi,wereng batang cokelat,2,g/l,2025-02-17,2030-02-17
+597,BESTKING 60/20 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,2,g/l,2025-02-17,2030-02-17
+598,BESTROXAM 30/10 WG,Insektisida,WG,Pimetrozin,30,%,padi,wereng batang cokelat,2,g/l,2025-02-17,2030-02-17
+599,BESTROXAM 30/10 WG,Insektisida,WG,Tiametoksam,10,%,padi,wereng batang cokelat,2,g/l,2025-02-17,2030-02-17
+600,BIOVAR P,Insektisida, P,Beauveria bassiana,"6,2 x 10^8",cfu/g,padi,wereng batang cokelat,4,g/l,2024-08-09,2029-08-09
+601,BLADE 5/50 WP,Insektisida,WP,Nitenpyram,5,%,padi,wereng batang cokelat,2,g/l,2024-11-18,2029-11-18
+602,BLADE 5/50 WP,Insektisida,WP,Pymetrozine,50,%,padi,wereng batang cokelat,2,g/l,2024-11-18,2029-11-18
+603,BUPRO-NA 25 WP,Insektisida,WP,Buprofezin,25,%,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+604,BURENG 20 WG,Insektisida,WG,Nitenpiram,20.00,%,padi,wereng batang cokelat,"0,25",g/l,2025-07-11,2030-07-11
+605,CAMORA 100 SL,Insektisida,SL,Nitenpiram,100,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+606,CANTRIO 50 WG,Insektisida,WG,Pymetrozine,50,%,padi,wereng batang cokelat,1,g/l,2023-02-08,2028-02-08
+607,CARBOTER 3 GR,Insektisida,GR,Karbofuran,3,%,padi,wereng batang cokelat,15,kg/ha,2023-04-26,2028-04-26
+608,CARBOTER 3 GR,Insektisida,GR,Karbofuran,3,%,padi,wereng batang cokelat,15,kg/ha,2023-04-26,2028-04-26
+609,CATALAN 33 WP,Insektisida,WP,imidakloprid,33,%,padi,wereng batang cokelat,2,g/l,2026-01-20,2031-01-20
+610,CENTADINE 450 SL,Insektisida,SL,dimehipo,450,g/l,padi,wereng batang cokelat,3,ml/l,2022-10-04,2027-10-04
+611,CHLORANLIER 200 SC,Insektisida,SC,klorantraniliprol,200,g/l,padi,wereng batang cokelat,1,ml/l,2024-11-18,2029-11-18
+612,Cleverole 50 SC,Insektisida,SC,Klorantraniliprol,50,g/l,padi,wereng batang cokelat,2,ml/l,2025-02-17,2030-02-17
+613,CONDIOR 25 WP,Insektisida,WP,Imidakloprid,25,%,padi,wereng batang cokelat,"1,5",g/l,2025-11-13,2030-11-13
+614,CONQUER 100/200 SC,Insektisida,SC,Klorantraniliprol,100,g/l,padi,wereng batang cokelat,"0,4",ml/l,2025-07-11,2030-07-11
+615,CONQUER 100/200 SC,Insektisida,SC,Tiametoksam,200,g/l,padi,wereng batang cokelat,"0,4",ml/l,2025-07-11,2030-07-11
+616,CYPIRAN 12.5 WP,Insektisida,WP,Nitenpiram,12.5,%,padi,wereng batang cokelat,"1,5",g/l,2024-11-18,2029-11-18
+617,D-REJEN 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,2,ml/l,2025-11-13,2030-11-13
+618,DEFENDER 10/50 WG,Insektisida,WG,Nitenpiram,10,%,padi,wereng batang cokelat,1.5,g/l,2023-08-28,2028-08-28
+619,DEFENDER 10/50 WG,Insektisida,WG,Nitenpiram,10,%,padi,wereng batang cokelat,1.5,g/l,2023-08-28,2028-08-28
+620,DEFENDER 10/50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1.5,g/l,2023-08-28,2028-08-28
+621,DEFENDER 10/50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1.5,g/l,2023-08-28,2028-08-28
+622,DEFRON 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,wereng batang cokelat,1,ml/l,2025-07-11,2030-07-11
+623,Defuser 20/60 WG,Insektisida,WG,nitenpiram,20,%,padi,wereng batang cokelat,1.5,g/l,2024-03-04,2029-03-04
+624,Defuser 20/60 WG,Insektisida,WG,pimetrozin,60,%,padi,wereng batang cokelat,1.5,g/l,2024-03-04,2029-03-04
+625,DEKAPIRIM 400 SC,Insektisida,SC,imidakloprid,200,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+626,DEKAPIRIM 400 SC,Insektisida,SC,klorfenapir,200,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+627,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+628,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+629,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+630,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+631,DELADAXIN 50/90 SC,Insektisida,SC,Spinetoram,90,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+632,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+633,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+634,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+635,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+636,DELADAXIN 50/90 SC,Insektisida,SC,Triflumezopyrim,50,g/l,padi,wereng batang cokelat,1.7,ml/l,2022-12-05,2027-12-05
+637,DELOUSE 25 WP,Insektisida,WP,imidakloprid,25,%,padi,wereng batang cokelat,"1,5",g/l,2024-03-04,2029-03-04
+638,DEMIOS 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,2,ml/l,2024-03-04,2029-03-04
+639,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-10-04,2027-10-04
+640,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-10-04,2027-10-04
+641,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-10-04,2027-10-04
+642,DESTAR 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2022-10-04,2027-10-04
+643,DETONATOR 20 WP,Insektisida,WP,buprofezin,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+644,DETONATOR 20 WP,Insektisida,WP,buprofezin,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+645,DETONATOR 20 WP,Insektisida,WP,buprofezin,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+646,DETONATOR 20 WP,Insektisida,WP,buprofezin,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+647,DETONATOR 20 WP,Insektisida,WP,buprofezin,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+648,DETONATOR 20 WP,Insektisida,WP,etofenproks,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+649,DETONATOR 20 WP,Insektisida,WP,etofenproks,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+650,DETONATOR 20 WP,Insektisida,WP,etofenproks,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+651,DETONATOR 20 WP,Insektisida,WP,etofenproks,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+652,DETONATOR 20 WP,Insektisida,WP,etofenproks,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+653,Dharmafur 3 GR,Insektisida,GR,karbofuran,3,%,padi,wereng batang cokelat,25.5,kg/ha,2022-12-05,2027-12-05
+654,DIAMONA 40/20 WG,Insektisida,WG,Dinotefuran,20,%,padi,wereng batang cokelat,"1,5",g/l,2025-09-26,2030-09-26
+655,DIAMONA 40/20 WG,Insektisida,WG,Pimetrozin,40,%,padi,wereng batang cokelat,"1,5",g/l,2025-09-26,2030-09-26
+656,DIMPO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,3,ml/l,2023-04-26,2028-04-26
+657,E-BUNITE 60/10 WP,Insektisida,WP,Buprofezin,60,%,padi,wereng batang cokelat,2,g/l,2026-04-20,2031-04-20
+658,E-BUNITE 60/10 WP,Insektisida,WP,Nitenpiram,10,%,padi,wereng batang cokelat,2,g/l,2026-04-20,2031-04-20
+659,ET-HIPO 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,wereng batang cokelat,2,ml/l,2025-11-13,2030-11-13
+660,EXPERTO 300 SC,Insektisida,SC,Imidakloprid,200,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+661,EXPERTO 300 SC,Insektisida,SC,Imidakloprid,200,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+662,EXPERTO 300 SC,Insektisida,SC,Imidakloprid,200,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+663,EXPERTO 300 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+664,EXPERTO 300 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+665,EXPERTO 300 SC,Insektisida,SC,Klorfenapir,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+666,FERADIPO 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,wereng batang cokelat,2.5,ml/l,2023-08-28,2028-08-28
+667,FICAZ 25 SP,Insektisida,SP,Nitenpiram,25,%,padi,wereng batang cokelat,1,g/l,2024-03-04,2029-03-04
+668,FIPROZOLE 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2025-02-17,2030-02-17
+669,FOLTUS PLUS 500 SL,Insektisida,SL,dimehipo,500,g/l,padi,wereng batang cokelat,2,ml/l,2025-07-11,2030-07-11
+670,FURATUR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,wereng batang cokelat,"25,5",kg/ha,2023-04-26,2028-04-26
+671,FURROZ 40/20 WG,Insektisida,WG,dinotefuran,20,%,padi,wereng batang cokelat,0.5,g/l,2024-03-04,2029-03-04
+672,FURROZ 40/20 WG,Insektisida,WG,pymetrozine,40,%,padi,wereng batang cokelat,0.5,g/l,2024-03-04,2029-03-04
+673,Gardara 10 SP,Insektisida,SP,Nitenpyram,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+674,Gardara 10 SP,Insektisida,SP,Nitenpyram,10,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+675,GARNET 80 WG,Insektisida,WG,Fipronil,80,%,padi,wereng batang cokelat,0.1,g/l,2026-01-20,2031-01-20
+676,GAVIN 35 WP,Insektisida,WP,Nitenpiram,10.00,%,padi,wereng batang cokelat,1.5,g/l,2023-04-26,2028-04-26
+677,GAVIN 35 WP,Insektisida,WP,Tiametoksam,25.00,%,padi,wereng batang cokelat,1.5,g/l,2023-04-26,2028-04-26
+678,GENIUS 20/125 OD,Insektisida,OD,Abamektin,20,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+679,GENIUS 20/125 OD,Insektisida,OD,Nitenpiram,125,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+680,GOLDCHECK 30/40 WG,Insektisida,WG,Nitenpyram,30,%,padi,wereng batang cokelat,"1,5",g/l,2024-08-09,2029-08-09
+681,GOLDCHECK 30/40 WG,Insektisida,WG,pymetrozine,40,%,padi,wereng batang cokelat,"1,5",g/l,2024-08-09,2029-08-09
+682,HANTER 20/60 WG,Insektisida,WG,nitenpiram,20,%,padi,wereng batang cokelat,1.5,g/l,2022-06-27,2027-06-27
+683,HANTER 20/60 WG,Insektisida,WG,pimetrozin,60,%,padi,wereng batang cokelat,1.5,g/l,2022-06-27,2027-06-27
+684,HICARB 500 EC,Insektisida,EC,Fenobukarb,500,g/l,padi,wereng batang cokelat,2,ml/l,2025-07-11,2030-07-11
+685,HIPPO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+686,HIPPO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+687,HIPPO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+688,HIPPO 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+689,HIPPO 48 WP,Insektisida,WP,Dimehypo,45,%,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+690,HIPPO 48 WP,Insektisida,WP,Imidacloprid,3,%,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+691,HOKITAN 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,wereng batang cokelat,"2,5",ml/l,2024-03-05,2029-03-05
+692,HOPPER 500 EC,Insektisida,EC,BPMC,500,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+693,HYPOMAX 550 SL,Insektisida,SL,Dimehipo,550,g/l,padi,wereng batang cokelat,1,ml/l,2025-02-17,2030-02-17
+694,IMIDAPRO 30 WP,Insektisida,WP,Imidakloprid,30,%,padi,wereng batang cokelat,2,g/l,2024-03-05,2029-03-05
+695,IMIDOR 50 SL,Insektisida,SL,Imidakloprid,50,g/l,padi,wereng batang cokelat,1,ml/l,2025-11-13,2030-11-13
+696,INDOBAS 500 EC,Insektisida,EC,BPMC,500,g/l,padi,wereng batang cokelat,2,ml/l,2025-09-26,2030-09-26
+697,INDODINE 6 GR,Insektisida,GR,dimehipo,6,%,padi,wereng batang cokelat,12,kg/ha,2022-10-04,2027-10-04
+698,INDOMEC 20 EC,Insektisida,EC,abamektin,20,g/l,padi,wereng batang cokelat,2,ml/l,2024-03-05,2029-03-05
+699,INTERPRID 25 WP,Insektisida,WP,Imidakloprid,25,%,padi,wereng batang cokelat,1.5,g/l,2023-04-26,2028-04-26
+700,JAMBO 200 ME,Insektisida,ME,abamektin,2,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+701,JAMBO 200 ME,Insektisida,ME,Monosultap,198,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+702,JIBRO 50 SC,Insektisida,SC,fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2025-07-11,2030-07-11
+703,K-KINGFIELD 60/20 WG,Insektisida,WG,Nitenpiram,20,%,padi,wereng batang cokelat,0.5,g/l,2023-04-26,2028-04-26
+704,K-KINGFIELD 60/20 WG,Insektisida,WG,Nitenpiram,20,%,padi,wereng batang cokelat,0.5,g/l,2023-04-26,2028-04-26
+705,K-KINGFIELD 60/20 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,0.5,g/l,2023-04-26,2028-04-26
+706,K-KINGFIELD 60/20 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,0.5,g/l,2023-04-26,2028-04-26
+707,K-METCARB 20/5 WP,Insektisida,WP,Buprofezin,5,%,padi,wereng batang cokelat,2,g/l,2025-09-26,2030-09-26
+708,K-METCARB 20/5 WP,Insektisida,WP,Metolkarb,20,%,padi,wereng batang cokelat,2,g/l,2025-09-26,2030-09-26
+709,KARIBIAN 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+710,KAYAN 128 SL,Insektisida,SL,nitenpiram,128,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+711,KENTARA 200 EC,Insektisida,EC,Karbosulfan,200,g/l,padi,wereng batang cokelat,1,ml/l,2024-08-09,2029-08-09
+712,KICKOFF 36 EC,Insektisida,EC,Abamektin,36,g/l,padi,wereng batang cokelat,2,ml/l,2025-02-17,2030-02-17
+713,KLENGER 150 SL,Insektisida,SL,Nitenpiram,150,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+714,KLENGER 150 SL,Insektisida,SL,Nitenpiram,150,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+715,KLOPER 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+716,KLOPINDO 10 WP,Insektisida,WP,imidakloprid,10,%,padi,wereng batang cokelat,"0,4",g/l,2024-08-09,2029-08-09
+717,KONSULTAN 200 SC,Insektisida,SC,Klotianidin,200,g/l,padi,wereng batang cokelat,2,ml/l,2025-11-13,2030-11-13
+718,KRESNADAN 3 GR,Insektisida,GR,Karbofuran,3,%,padi,wereng batang cokelat,15,kg/ha,2025-11-13,2030-11-13
+719,KURATERBANG 3.3 GR,Insektisida,GR,Karbofuran,3.3,%,padi,wereng batang cokelat,17,kg/ha,2023-02-08,2028-02-08
+720,KURATERBANG 3.3 GR,Insektisida,GR,karbofuran,3.3,%,padi,wereng batang cokelat,17,kg/ha,2023-02-08,2028-02-08
+721,LORENTZ 61 EC,Insektisida,EC,Abamektin,36,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+722,LORENTZ 61 EC,Insektisida,EC,Imidakloprid,25,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+723,LUGEN 100 EC,Insektisida,EC,buprofezin,100,g/l,padi,wereng batang cokelat,"0,25",l/ha,2023-04-26,2028-04-26
+724,MADRID 50/10 WP,Insektisida,WP,Buprofezin,10,%,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+725,MADRID 50/10 WP,Insektisida,WP,Dimehipo,50,%,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+726,MATRIX 200 EC,Insektisida,EC,karbosulfan,200,g/l,padi,wereng batang cokelat,"0,5",ml/l,2024-03-04,2029-03-04
+727,MATRIX WIN 200/100 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"0,5",ml/l,2024-03-04,2029-03-04
+728,MATRIX WIN 200/100 EC,Insektisida,EC,Karbosulfan,200,g/l,padi,wereng batang cokelat,"0,5",ml/l,2024-03-04,2029-03-04
+729,MILENIUM 60 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,2,g/l,2023-02-08,2028-02-08
+730,MITRIN 320/32 SC,Insektisida,SC,Abamektin,32,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+731,MITRIN 320/32 SC,Insektisida,SC,Abamektin,32,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+732,MITRIN 320/32 SC,Insektisida,SC,Imidakloprid,320,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+733,MITRIN 320/32 SC,Insektisida,SC,Imidakloprid,320,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+734,MONTAF 400 SL,Insektisida,SL,dimehipo (bisultap),400,g/l,padi,wereng batang cokelat,1,ml/l,2024-03-04,2029-03-04
+735,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+736,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+737,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+738,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+739,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+740,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+741,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+742,NEOFRON 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,"0,5",ml/l,2023-08-28,2028-08-28
+743,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+744,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+745,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+746,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+747,NETOXIN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+748,NIGO 60 WP,Insektisida,WP,Nitenpiram,60,%,padi,wereng batang cokelat,"1,5",g/l,2025-09-26,2030-09-26
+749,NIZIN 60/10 WG,Insektisida,WG,buprofezin,60,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+750,NIZIN 60/10 WG,Insektisida,WG,buprofezin,60,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+751,NIZIN 60/10 WG,Insektisida,WG,nitenpiram,10,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+752,NIZIN 60/10 WG,Insektisida,WG,nitenpiram,10,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+753,OBR 25 WP,Insektisida,WP,Imidakloprid,25,%,padi,wereng batang cokelat,1,g/l,2025-09-26,2030-09-26
+754,ORIZ 50 WG,Insektisida,WG,pymetrozine,50,%,padi,wereng batang cokelat,"0,6",g/l,2025-07-11,2030-07-11
+755,PANDAWA 50/10 WP,Insektisida,WP,Bisultap,50,%,padi,wereng batang cokelat,3,g/l,2024-09-19,2029-09-19
+756,PANDAWA 50/10 WP,Insektisida,WP,Tiametoksam,10,%,padi,wereng batang cokelat,3,g/l,2024-09-19,2029-09-19
+757,PANINDO 10 WP,Insektisida,WP,Imidakloprid,10,%,padi,wereng batang cokelat,0.4,g/l,2023-04-26,2028-04-26
+758,PANZER 290 SL,Insektisida,SL,Bisultap,290,g/l,padi,wereng batang cokelat,"0,75",l/ha,2023-02-08,2028-02-08
+759,PANZER 290 SL,Insektisida,SL,Bisultap,290,g/l,padi,wereng batang cokelat,"0,75",l/ha,2023-02-08,2028-02-08
+760,PARASOL 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,wereng batang cokelat,1,ml/l,2023-04-26,2028-04-26
+761,PERFEKTHION 400 SL,Insektisida,SL,monosultap,400,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-04-26,2028-04-26
+762,PILARCHESS 60 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,"0,84",g/l,2023-02-08,2028-02-08
+763,PILARTA 110/110 SC,Insektisida,SC,Klotianidin,110,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+764,PILARTA 110/110 SC,Insektisida,SC,Klotianidin,110,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+765,PILARTA 110/110 SC,Insektisida,SC,Pimetrozin,110,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+766,PILARTA 110/110 SC,Insektisida,SC,Pimetrozin,110,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+767,PINKO PLUS 60 SC,Insektisida,SC,Fipronil,60,g/l,padi,wereng batang cokelat,1,ml/l,2026-04-20,2031-04-20
+768,PIRAM 150 SL,Insektisida,SL,Nitenpiram,150,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+769,PIRAM 150 SL,Insektisida,SL,Nitenpiram,150,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+770,PIRAM 150 SL,Insektisida,SL,Nitenpiram,150,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+771,POKSINDO 200 EC,Insektisida,EC,propoksur,200,g/l,padi,wereng batang cokelat,2,ml/l,2024-03-04,2029-03-04
+772,PRIMADINE 450 SL,Insektisida,SL,dimehipo,450,g/l,padi,wereng batang cokelat,"2,25",ml/l,2022-06-27,2027-06-27
+773,PROMOCYODAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,wereng batang cokelat,17,kg/ha,2023-02-08,2028-02-08
+774,PROMODAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,wereng batang cokelat,17,kg/ha,2022-12-05,2027-12-05
+775,PROMODAN 3 GR,Insektisida,GR,karbofuran,3,%,padi,wereng batang cokelat,17,kg/ha,2022-12-05,2027-12-05
+776,PRONITE 60/20 WG,Insektisida,WG,Nitenpiram,20,%,padi,wereng batang cokelat,"0,5",g/l,2022-12-05,2027-12-05
+777,PRONITE 60/20 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,"0,5",g/l,2022-12-05,2027-12-05
+778,PYTROSAN 50/20 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+779,PYTROSAN 50/20 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+780,PYTROSAN 50/20 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+781,PYTROSAN 50/20 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+782,PYTROSAN 50/20 WG,Insektisida,WG,Tiametoksam,20,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+783,PYTROSAN 50/20 WG,Insektisida,WG,Tiametoksam,20,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+784,PYTROSAN 50/20 WG,Insektisida,WG,Tiametoksam,20,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+785,PYTROSAN 50/20 WG,Insektisida,WG,Tiametoksam,20,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+786,QAISHAR 10 WP,Insektisida,WP,Nitenpiram,10,%,padi,wereng batang cokelat,"1,5",g/l,2026-01-20,2031-01-20
+787,RADIGEN 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2023-08-28,2028-08-28
+788,RAGE 90 SP,Insektisida,SP,Monosultap,90,%,padi,wereng batang cokelat,"0,6",g/l,2022-12-05,2027-12-05
+789,RAHWANA 500 EC,Insektisida,EC,BPMC,500,g/l,padi,wereng batang cokelat,2,ml/l,2022-12-05,2027-12-05
+790,RAMPAGE 200/50 SC,Insektisida,SC,Emamektin benzoat,50,g/l,padi,wereng batang cokelat,1,ml/l,2026-04-20,2031-04-20
+791,RAMPAGE 200/50 SC,Insektisida,SC,Klorantraniliprol,200,g/l,padi,wereng batang cokelat,1,ml/l,2026-04-20,2031-04-20
+792,REGGI 60 EC,Insektisida,EC,Fipronil,60,g/l,padi,wereng batang cokelat,1,ml/l,2025-07-11,2030-07-11
+793,REMIFA 25 SP,Insektisida,SP,nitenpiram,25,%,padi,wereng batang cokelat,1,g/l,2025-07-11,2030-07-11
+794,RENEGADE 500 SC,Insektisida,SC,Klorfenapir,500,g/l,padi,wereng batang cokelat,2,ml/l,2025-02-17,2030-02-17
+795,RESPECT 200 EC,Insektisida,EC,karbosulfan,200,g/l,padi,wereng batang cokelat,"1,5 - 2",ml/l,2023-04-26,2028-04-26
+796,REXDAN 3 GR,Insektisida,GR,Carbofuran,3,%,padi,wereng batang cokelat,20,kg/ha,2024-03-04,2029-03-04
+797,RG 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,"1,5",ml/l,2024-11-18,2029-11-18
+798,RHANUM 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,0.6,g/l,2022-01-14,2027-01-14
+799,Rockrole 100/200 SC,Insektisida,SC,Klorantraniliprol,100,g/l,padi,wereng batang cokelat,"0,4",ml/l,2025-07-11,2030-07-11
+800,Rockrole 100/200 SC,Insektisida,SC,Tiametoksam,200,g/l,padi,wereng batang cokelat,"0,4",ml/l,2025-07-11,2030-07-11
+801,SAMIDA 15 WP,Insektisida,WP,Imidakloprid,15,%,padi,wereng batang cokelat,1,kg/ha,2023-04-26,2028-04-26
+802,SAPPORO 52 EC,Insektisida,EC,Emammektin Benzoat,52,g/l,padi,wereng batang cokelat,2,ml/l,2025-02-17,2030-02-17
+803,SAWARNA 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+804,SENSATION 100/200 SC,Insektisida,SC,Chlorantraniliprole,100,g/l,padi,wereng batang cokelat,1,ml/l,2026-01-20,2031-01-20
+805,SENSATION 100/200 SC,Insektisida,SC,Thiamethoxam,200,g/l,padi,wereng batang cokelat,1,ml/l,2026-01-20,2031-01-20
+806,SHIVER 25 WP,Insektisida,WP,imidakloprid,25,%,padi,wereng batang cokelat,"0,8",g/l,2024-08-09,2029-08-09
+807,SIDATAN 410 SL,Insektisida,SL,Dimehipo,410,g/l,padi,wereng batang cokelat,1,ml/l,2022-01-14,2027-01-14
+808,"SIKLON 5,7 WG",Insektisida,WG,emamectin benzoate,"5,7",%,padi,wereng batang cokelat,1,g/l,2023-02-08,2028-02-08
+809,SINGAMAN 110 SL,Insektisida,SL,Nitenpiram,110,g/l,padi,wereng batang cokelat,"0,5",ml/l,2024-11-18,2029-11-18
+810,SINOTICTURE 50 WG,Insektisida,WG,flonicamid,50,%,padi,wereng batang cokelat,1,g/l,2025-02-17,2030-02-17
+811,SitoPro 100 SC,Insektisida,SC,Klorantraniliprol,100,g/l,padi,wereng batang cokelat,2,ml/l,2026-04-20,2031-04-20
+812,SNATCH 50/10 WG,Insektisida,WG,Nitenpiram,10,%,padi,wereng batang cokelat,2,g/l,2022-12-05,2027-12-05
+813,SNATCH 50/10 WG,Insektisida,WG,Nitenpiram,10,%,padi,wereng batang cokelat,2,g/l,2022-12-05,2027-12-05
+814,SNATCH 50/10 WG,Insektisida,WG,Nitenpiram,10,%,padi,wereng batang cokelat,2,g/l,2022-12-05,2027-12-05
+815,SNATCH 50/10 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,2,g/l,2022-12-05,2027-12-05
+816,SNATCH 50/10 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,2,g/l,2022-12-05,2027-12-05
+817,SNATCH 50/10 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,2,g/l,2022-12-05,2027-12-05
+818,SONIC 450 SL,Insektisida,SL,Dimehipo,450,g/l,padi,wereng batang cokelat,1,ml/l,2022-06-27,2027-06-27
+819,SPARTAN 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,"0,75",ml/l,2024-11-18,2029-11-18
+820,STARAS 100/35/20 EC,Insektisida,EC,Abamektin,100,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+821,STARAS 100/35/20 EC,Insektisida,EC,Abamektin,100,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+822,STARAS 100/35/20 EC,Insektisida,EC,Fipronil,35,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+823,STARAS 100/35/20 EC,Insektisida,EC,Fipronil,35,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+824,STARAS 100/35/20 EC,Insektisida,EC,Heksaflumuron,20,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+825,STARAS 100/35/20 EC,Insektisida,EC,Heksaflumuron,20,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+826,STARGATE 600 SC,Insektisida,SC,Klotianidin,600,g/l,padi,wereng batang cokelat,300,ml/ha,2024-09-19,2029-09-19
+827,STARLET 400 SL,Insektisida,SL,Bisultap,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-12-05,2027-12-05
+828,STARLET 400 SL,Insektisida,SL,Bisultap,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-12-05,2027-12-05
+829,SUICA 50/20 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+830,SUICA 50/20 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+831,SUICA 50/20 WG,Insektisida,WG,Tiametoksam,20,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+832,SUICA 50/20 WG,Insektisida,WG,Tiametoksam,20,%,padi,wereng batang cokelat,1,g/l,2022-06-27,2027-06-27
+833,SULFARON 200/50 EC,Insektisida,EC,Karbosulfan,200,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+834,SULFARON 200/50 EC,Insektisida,EC,Karbosulfan,200,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+835,SULFARON 200/50 EC,Insektisida,EC,Klorfluazuron,50,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+836,SULFARON 200/50 EC,Insektisida,EC,Klorfluazuron,50,g/l,padi,wereng batang cokelat,2,ml/l,2022-06-27,2027-06-27
+837,SUPEMEC 18 EC,Insektisida,EC,abamektin,18,g/l,padi,wereng batang cokelat,2,ml/l,2024-03-05,2029-03-05
+838,SUPORTAN 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,wereng batang cokelat,2,ml/l,2026-01-20,2031-01-20
+839,SUPORTAN 500 SL,Insektisida,SL,Monosultap,500,g/l,padi,wereng batang cokelat,2,ml/l,2023-04-26,2028-04-26
+840,TAKEOVER 505 SL,Insektisida,SL,Dimehipo,505,g/l,padi,wereng batang cokelat,"1,5",ml/l,2022-12-05,2027-12-05
+841,TANITERR 3 GR,Insektisida,GR,Karbofuran,3,%,padi,wereng batang cokelat,"18,75",kg/ha,2025-02-17,2030-02-17
+842,TARUNA 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,2,ml/l,2022-10-04,2027-10-04
+843,TIDAL 5 WP,Insektisida,WP,Imidakloprid,5,%,padi,wereng batang cokelat,"0,8",g/l,2023-04-26,2028-04-26
+844,TIMBER 50/15 WP,Insektisida,WP,Buprofezin,15,%,padi,wereng batang cokelat,"0,75",g/l,2025-02-17,2030-02-17
+845,TIMBER 50/15 WP,Insektisida,WP,Monosultap,50,%,padi,wereng batang cokelat,"0,75",g/l,2025-02-17,2030-02-17
+846,TOPNIL 50 SC,Insektisida,SC,Fipronil,50,g/l,padi,wereng batang cokelat,1,ml/l,2024-03-05,2029-03-05
+847,TRIACTIVE 500 SL,Insektisida,SL,Dimehipo,500,g/l,padi,wereng batang cokelat,"1,5",ml/l,2025-02-17,2030-02-17
+848,TRILAMAZOR 75 WP,Insektisida,WP,Siromazin,75,%,padi,wereng batang cokelat,"0,75",g/l,2025-02-17,2030-02-17
+849,TRIPON 30/5 WP,Insektisida,WP,Fipronil,5,%,padi,wereng batang cokelat,1,g/l,2023-04-26,2028-04-26
+850,TRIPON 30/5 WP,Insektisida,WP,Imidakloprid,30,%,padi,wereng batang cokelat,1,g/l,2023-04-26,2028-04-26
+851,TRUPER 3 GR,Insektisida,GR,karbofuran,3,%,padi,wereng batang cokelat,17,kg/ha,2026-01-20,2031-01-20
+852,ULTIMARAC 360 SC,Insektisida,SC,Klorfenapir (Chlorfenapyr),360,g/l,padi,wereng batang cokelat,"1,5",ml/l,2025-07-11,2030-07-11
+853,UNIBEST 200 SL,Insektisida,SL,imidakloprid,200,g/l,padi,wereng batang cokelat,0.5,ml/l,2026-01-20,2031-01-20
+854,VENTURA 5 GR,Insektisida,GR,karbofuran,5,%,padi,wereng batang cokelat,"7,5",kg/ha,2023-04-26,2028-04-26
+855,VESTORIA 20 WG,Insektisida,WG,Triflumezopyrim,20,%,padi,wereng batang cokelat,"0,45",g/l,2025-11-13,2030-11-13
+856,VOLCANO 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+857,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+858,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+859,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+860,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+861,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+862,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+863,WINGREAT 400 EC,Insektisida,EC,BPMC,300,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+864,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+865,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+866,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+867,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+868,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+869,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+870,WINGREAT 400 EC,Insektisida,EC,Imidakloprid,100,g/l,padi,wereng batang cokelat,"1,5",ml/l,2023-08-28,2028-08-28
+871,WORTHIDE XTRA 30/30 WG,Insektisida,WG,Dinotefuran,30,%,padi,wereng batang cokelat,"1,5",g/l,2023-02-08,2028-02-08
+872,WORTHIDE XTRA 30/30 WG,Insektisida,WG,Dinotefuran,30,%,padi,wereng batang cokelat,"1,5",g/l,2023-02-08,2028-02-08
+873,WORTHIDE XTRA 30/30 WG,Insektisida,WG,Pimetrozin,30,%,padi,wereng batang cokelat,"1,5",g/l,2023-02-08,2028-02-08
+874,WORTHIDE XTRA 30/30 WG,Insektisida,WG,Pimetrozin,30,%,padi,wereng batang cokelat,"1,5",g/l,2023-02-08,2028-02-08
+875,XENON 20/60 WG,Insektisida,WG,Nitempiram,20,%,padi,wereng batang cokelat,"0,75",g/l,2024-08-09,2029-08-09
+876,XENON 20/60 WG,Insektisida,WG,Pimetrozin,60,%,padi,wereng batang cokelat,"0,75",g/l,2024-08-09,2029-08-09
+877,ZIBAZ 400 EC,Insektisida,EC,BPMC,400,g/l,padi,wereng batang cokelat,"0,5",ml/l,2022-10-04,2027-10-04
+878,ZIOFY 50 WG,Insektisida,WG,Pimetrozin,50,%,padi,wereng batang cokelat,"0,5",g/l,2022-06-27,2027-06-27
+879,ENTOMOBAC WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+880,ENTOMOBAC WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+881,ENTOMOBAC WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+882,ENTOMOBAC WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+883,ENTOMOBAC WP,Insektisida,WP,Beauveria bassiana,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+884,ENTOMOBAC WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+885,ENTOMOBAC WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+886,ENTOMOBAC WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+887,ENTOMOBAC WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+888,ENTOMOBAC WP,Insektisida,WP,Metarhizium anisopliae,1 x 10^6,cfu/g,padi,wereng batang cokelat,2,g/l,2023-04-26,2028-04-26
+889,DETOP 400 SL,Insektisida,SL,Dimehipo,400,g/l,padi,wereng batang cokelat,3,ml/l,2026-01-20,2031-01-20

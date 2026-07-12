@@ -1,0 +1,58 @@
+no,name,description,pest,growth_stage,severity,rule_role,is_core_symptom,recommended_for_rule,default_weight
+1,Gejala sundep pada fase vegetatif,"Pucuk/anakan tengah layu, mengering, dan mudah dicabut pada fase vegetatif; khas serangan penggerek batang tahap sundep.",penggerek batang,vegetatif,ringan|sedang,severity_anchor,True,True,0.9
+2,Gejala beluk / malai putih,"Malai pada fase generatif memutih, hampa, dan tegak karena pangkal malai rusak oleh larva penggerek batang.",penggerek batang,generatif,sedang|berat,severity_anchor,True,True,0.95
+3,Lubang kecil pada batang atau pelepah,Terdapat lubang kecil pada pelepah/batang sebagai jalan masuk larva; perlu dikonfirmasi dengan bekas gerekan atau larva.,penggerek batang,vegetatif|generatif,ringan|sedang,identity,True,True,0.8
+4,Serbuk gerekan di batang,Kotoran/serbuk gerekan terlihat di sekitar lubang atau sela pelepah akibat aktivitas larva di dalam batang.,penggerek batang,vegetatif|generatif,ringan|sedang,identity,True,True,0.85
+5,Kelompok telur berambut,Massa telur penggerek batang di permukaan daun tertutup bulu halus coklat kekuningan.,penggerek batang,vegetatif|generatif,ringan,supporting,False,True,0.7
+6,Anakan mati bertahap,Beberapa anakan dalam satu rumpun menguning lalu mati bertahap meski air tersedia.,penggerek batang,vegetatif,sedang|berat,severity_anchor,True,True,0.9
+7,Batang rapuh dan mudah patah,Batang menjadi kosong/rapuh dan mudah patah akibat jaringan dalam rusak oleh larva.,penggerek batang,vegetatif|generatif,sedang|berat,damage,True,True,0.8
+8,Malai kosong / bulir tidak terisi,Bulir pada malai tidak terisi; pada penggerek batang biasanya disertai malai putih/beluk atau pangkal malai rusak.,penggerek batang,generatif,sedang|berat,damage,True,True,0.85
+9,Larva penggerek di dalam batang,Saat batang dibelah ditemukan larva putih krem/merah jambu di dalam ruas batang.,penggerek batang,vegetatif|generatif,ringan|sedang|berat,identity,True,True,0.95
+10,Titik tumbuh mati,Titik tumbuh rusak sehingga daun baru berhenti muncul; kuat untuk penggerek batang vegetatif berat.,penggerek batang,vegetatif,berat,severity_anchor,True,True,1.0
+11,Malai putih prematur / whitehead,Malai memutih prematur sementara daun bendera masih relatif hijau; istilah lapang: whitehead/beluk.,penggerek batang,generatif,sedang|berat,severity_anchor,True,True,0.95
+12,Pangkal malai terpotong,"Pangkal malai di dalam batang terputus akibat makan larva, menyebabkan malai hampa/putih.",penggerek batang,generatif,berat,severity_anchor,True,True,1.0
+13,Anakan produktif menurun,Jumlah anakan produktif/malai berkurang akibat kerusakan batang atau titik tumbuh.,penggerek batang,vegetatif|generatif,sedang,damage,True,True,0.75
+14,Bekas makan pada jaringan dalam batang,Jika batang dibelah terlihat saluran/bekas makan larva pada jaringan dalam batang.,penggerek batang,vegetatif|generatif,sedang|berat,identity,True,True,0.9
+15,Malai keluar tidak sempurna,Malai hanya keluar sebagian dari pelepah lalu mengering; dapat terjadi akibat kerusakan batang/malai.,penggerek batang,generatif,sedang,damage,True,True,0.8
+16,Batang terasa kosong/lunak,Batang terasa tidak solid/kosong saat ditekan karena jaringan dalam rusak.,penggerek batang,vegetatif|generatif,sedang|berat,damage,True,True,0.75
+17,Pola serangan mengelompok,Sundep/beluk muncul pada titik fokus dan menyebar mengelompok.,penggerek batang,vegetatif|generatif,sedang,supporting,False,True,0.6
+18,Bercak coklat/hitam pada bulir,Noda coklat/hitam kecil pada kulit gabah akibat bekas tusukan walang sangit.,walang sangit,generatif,ringan|sedang,severity_anchor,True,True,0.85
+19,Bulir hampa sebagian,Gabah tidak terisi penuh/separuh karena cairan bulir dihisap pada fase masak susu.,walang sangit,generatif,sedang,severity_anchor,True,True,0.9
+20,Aroma khas walang sangit,Aroma menyengat khas muncul saat serangga terganggu di pertanaman.,walang sangit,generatif,ringan|sedang|berat,identity,True,True,0.8
+21,Cairan putih keluar dari gabah,"Pada fase masak susu, bekas tusukan menyebabkan cairan putih keluar/mengering di permukaan gabah.",walang sangit,generatif,ringan|sedang,damage,True,True,0.85
+22,Gabah berwarna kapur,Isi gabah/beras tampak putih keruh seperti kapur dan rapuh akibat gangguan pengisian.,walang sangit,generatif,sedang|berat,damage,True,True,0.8
+23,Malai tetap tegak karena bulir ringan,Malai tidak merunduk saat matang karena banyak bulir ringan atau tidak berisi.,walang sangit,generatif,sedang|berat,damage,True,True,0.75
+24,Nimfa walang sangit pada malai,Ditemukan nimfa hijau ramping di antara malai padi.,walang sangit,generatif,ringan|sedang|berat,identity,True,True,0.95
+25,Telur walang sangit berbaris,Telur berbentuk cakram/oval tersusun berbaris pada daun atau bagian tanaman dekat malai.,walang sangit,generatif,ringan,supporting,False,True,0.65
+26,Bobot gabah menurun,Bobot gabah lebih ringan dari biasanya meski volume terlihat banyak.,walang sangit,generatif|pasca_panen,berat,severity_anchor,True,True,0.9
+27,Malai tampak kusam,Malai/bulir tampak kusam kecoklatan dan tidak cerah akibat hisapan pada bulir.,walang sangit,generatif,sedang,damage,True,True,0.8
+28,Walang sangit aktif pagi/sore,"Serangga terlihat aktif hinggap di malai saat pagi, sore, mendung, atau kondisi sejuk.",walang sangit,generatif,ringan|sedang|berat,supporting,False,True,0.55
+29,Gabah lembek/kosong saat ditekan,"Pada fase masak susu, gabah terasa lembek/kosong atau hanya keluar sedikit cairan.",walang sangit,generatif,sedang,damage,True,True,0.85
+30,Serangga dewasa walang sangit,"Serangga dewasa coklat muda, ramping, berkaki panjang terlihat pada malai padi.",walang sangit,generatif,ringan|sedang|berat,identity,True,True,0.95
+31,Bulir gagal terisi setelah pembungaan,Serangan awal pembungaan/masak susu menyebabkan bulir gagal terisi.,walang sangit,generatif,sedang|berat,severity_anchor,True,True,0.85
+32,Malai tampak kotor berbintik,Malai terlihat kotor karena banyak bercak gelap pada bulir.,walang sangit,generatif,sedang,supporting,False,True,0.6
+33,Bekas tusukan halus pada gabah,Dengan kaca pembesar terlihat lubang halus pada kulit gabah hijau.,walang sangit,generatif,ringan|sedang,identity,True,True,0.85
+34,Malai/bulir mengering lebih cepat,Bagian malai yang dihisap kehilangan kadar air dan mengering lebih cepat dari sekitarnya.,walang sangit,generatif,sedang|berat,damage,True,True,0.75
+35,Hopperburn / tanaman seperti terbakar,"Tanaman mengering cepat seperti terbakar, sering membentuk area melingkar akibat serangan wereng berat.",wereng batang cokelat,vegetatif|generatif,berat,severity_anchor,True,True,1.0
+36,Wereng di pangkal batang,Kerumunan wereng dewasa/nimfa berada di pangkal batang dekat permukaan air.,wereng batang cokelat,vegetatif|generatif,ringan|sedang|berat,identity,True,True,0.95
+37,Jamur jelaga hitam pada pangkal batang,Lapisan hitam seperti jelaga tumbuh pada pangkal batang akibat embun madu wereng.,wereng batang cokelat,vegetatif|generatif,sedang|berat,identity,True,True,0.85
+38,Tanaman menguning tiba-tiba,Daun berubah kuning pucat cepat pada area terserang.,wereng batang cokelat,vegetatif|generatif,sedang,severity_anchor,True,True,0.75
+39,Bekas kulit wereng pada batang,Banyak eksuvia/bekas kulit putih menempel pada batang setelah nimfa berganti instar.,wereng batang cokelat,vegetatif|generatif,sedang,identity,True,True,0.8
+40,Area serangan melingkar,Kerusakan dimulai dari satu titik lalu meluas radial/melingkar.,wereng batang cokelat,vegetatif|generatif,sedang|berat,severity_anchor,False,True,0.65
+41,Batang lengket oleh embun madu,Pangkal batang terasa lengket karena ekskresi cairan manis dari wereng.,wereng batang cokelat,vegetatif|generatif,sedang,identity,True,True,0.85
+42,Daun menggulung ke dalam,"Daun menggulung ke dalam akibat kehilangan cairan, biasanya pada serangan awal-sedang.",wereng batang cokelat,vegetatif|generatif,ringan|sedang,damage,True,True,0.7
+43,Wereng bersayap panjang,Banyak wereng bersayap panjang menandakan populasi siap migrasi.,wereng batang cokelat,vegetatif|generatif,sedang|berat,supporting,False,True,0.55
+44,Wereng bersayap pendek dominan,Dominasi wereng bersayap pendek menunjukkan populasi fokus berkembang biak di petak tersebut.,wereng batang cokelat,vegetatif|generatif,sedang|berat,supporting,False,True,0.55
+45,Pertumbuhan berhenti total,Tanaman tidak bertambah tinggi/daun baru setelah serangan berat.,wereng batang cokelat,vegetatif,berat,severity_anchor,True,True,0.9
+46,Rumpun mati serempak,Rumpun pada satu area mati kering hampir bersamaan dalam beberapa hari.,wereng batang cokelat,vegetatif|generatif,berat,severity_anchor,True,True,1.0
+47,Batang/tanaman layu meski air cukup,Tanaman layu walau air cukup karena hisapan wereng mengganggu jaringan angkut.,wereng batang cokelat,vegetatif|generatif,sedang|berat,damage,True,True,0.75
+48,Produksi anakan menurun,Pembentukan anakan baru terhambat pada fase vegetatif akibat serangan wereng.,wereng batang cokelat,vegetatif,sedang,damage,True,True,0.75
+49,Pangkal batang coklat tua,Pangkal/batang luar menggelap coklat tua akibat tusukan berulang dan jaringan rusak.,wereng batang cokelat,vegetatif|generatif,sedang|berat,damage,True,True,0.75
+50,Tanaman kering meski tergenang,Tanaman tampak kering/mati walau bagian bawah masih tergenang air.,wereng batang cokelat,vegetatif|generatif,berat,severity_anchor,True,True,0.9
+51,Tanaman tampak kurang segar pada siang hari,Daun dan rumpun tampak layu ringan atau kurang segar terutama siang hari; perlu dikonfirmasi dengan keberadaan wereng di pangkal batang.,wereng batang cokelat,vegetatif|generatif,ringan,severity_anchor,True,True,0.75
+52,Daun mulai menguning di bagian bawah,Daun bagian bawah mulai menguning akibat aktivitas hisapan; masih termasuk indikasi awal jika belum membentuk area gosong.,wereng batang cokelat,vegetatif|generatif,ringan|sedang,damage,True,True,0.75
+53,Pertumbuhan anakan melambat,Pembentukan anakan melambat akibat tanaman kehilangan cairan dan vigor; cocok untuk serangan sedang vegetatif.,wereng batang cokelat,vegetatif,sedang,damage,True,True,0.8
+54,Pengisian bulir mulai terganggu,"Pada fase generatif, pengisian bulir mulai tidak normal; gejala ini umum sehingga harus dikonfirmasi dengan identitas WBC.",wereng batang cokelat,generatif,ringan|sedang,damage,True,True,0.7
+55,Malai tampak kurang bernas,Malai tampak kurang berisi/kurang bernas; mendukung gangguan generatif tetapi tidak spesifik untuk WBC.,wereng batang cokelat,generatif,ringan|sedang,damage,True,True,0.7
+56,Malai keluar sebagian,Malai mulai keluar tidak sempurna pada sebagian tanaman; indikasi awal gangguan generatif sebelum beluk berat tampak luas.,penggerek batang,generatif,ringan|sedang,severity_anchor,True,True,0.75
+57,Banyak bulir hampa dengan bukti wereng,Banyak bulir hampa dapat mendukung WBC berat hanya jika disertai bukti wereng/embun madu/jelaga/hopperburn; gejala ini tidak spesifik bila berdiri sendiri.,wereng batang cokelat,generatif,berat,supporting,False,True,0.6

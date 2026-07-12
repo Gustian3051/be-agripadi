@@ -1,0 +1,2061 @@
+{
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "Dokumentasi REST API backend AgriPadi untuk autentikasi, profil, upload gambar, percakapan, dan alur diagnosis hama padi.",
+        "title": "AgriPadi Backend API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {},
+        "version": "1.0"
+    },
+    "basePath": "/",
+    "paths": {
+        "/api/auth/login": {
+            "post": {
+                "description": "Login menggunakan nomor telepon dan password untuk mendapatkan JWT.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Login pengguna",
+                "parameters": [
+                    {
+                        "description": "Data login",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/auth.LoginRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/auth.AuthResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/auth/logout": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengakhiri sesi pengguna di sisi aplikasi.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Logout pengguna",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/auth.LogoutResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/auth/register": {
+            "post": {
+                "description": "Membuat akun pengguna baru untuk aplikasi AgriPadi.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Registrasi pengguna",
+                "parameters": [
+                    {
+                        "description": "Data registrasi",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/auth.RegisterRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/auth.AuthResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/conversations": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengambil daftar percakapan pengguna dengan pagination.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Daftar percakapan",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "Halaman",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Jumlah data per halaman",
+                        "name": "limit",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/conversation.ListResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengambil percakapan berdasarkan ID. Jika ID kosong pada endpoint POST /api/conversations, sistem membuat percakapan baru.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Ambil atau buat percakapan",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/conversation.ItemResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Menghapus beberapa percakapan berdasarkan daftar ID.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Hapus beberapa percakapan",
+                "parameters": [
+                    {
+                        "description": "Daftar ID percakapan",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/conversation.DeleteManyRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/conversations/delete-all": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Menghapus seluruh percakapan milik pengguna yang sedang login.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Hapus seluruh percakapan",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": true
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/conversations/delete-many": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Menghapus beberapa percakapan berdasarkan daftar ID.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Hapus beberapa percakapan",
+                "parameters": [
+                    {
+                        "description": "Daftar ID percakapan",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/conversation.DeleteManyRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/conversations/{conversation_id}": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengambil percakapan berdasarkan ID. Jika ID kosong pada endpoint POST /api/conversations, sistem membuat percakapan baru.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Ambil atau buat percakapan",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID percakapan",
+                        "name": "conversation_id",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/conversation.ItemResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Menghapus satu percakapan beserta lampiran lokal milik pengguna.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Conversations"
+                ],
+                "summary": "Hapus satu percakapan",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID percakapan",
+                        "name": "conversation_id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/conversations/{conversation_id}/messages": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengambil seluruh pesan pada satu percakapan milik pengguna.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Messages"
+                ],
+                "summary": "Daftar pesan percakapan",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID percakapan",
+                        "name": "conversation_id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/dto.MessageListResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengirim pesan pada percakapan. Payload dapat berisi teks, lampiran gambar, dan kandidat deteksi CNN untuk memulai alur diagnosis.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Messages"
+                ],
+                "summary": "Kirim pesan pengguna",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID percakapan",
+                        "name": "conversation_id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Data pesan",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.CreateMessageRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/dto.OrchestratorResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/profile": {
+            "get": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengambil detail profil pengguna yang sedang login.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Profile"
+                ],
+                "summary": "Ambil profil pengguna",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/profile.Response"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Memperbarui nama, email, atau nomor telepon pengguna.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Profile"
+                ],
+                "summary": "Perbarui profil pengguna",
+                "parameters": [
+                    {
+                        "description": "Data profil",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/profile.UpdateRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/profile.Response"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/profile/password": {
+            "patch": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengubah password akun pengguna yang sedang login.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Profile"
+                ],
+                "summary": "Ubah password",
+                "parameters": [
+                    {
+                        "description": "Data perubahan password",
+                        "name": "request",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/profile.ChangePasswordRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/upload": {
+            "post": {
+                "security": [
+                    {
+                        "BearerAuth": []
+                    }
+                ],
+                "description": "Mengunggah gambar hama padi. Jika mode CNN server aktif, backend dapat mengembalikan kandidat deteksi.",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Upload"
+                ],
+                "summary": "Upload gambar hama padi",
+                "parameters": [
+                    {
+                        "type": "file",
+                        "description": "File gambar jpg, jpeg, png, atau webp maksimal 10MB",
+                        "name": "image",
+                        "in": "formData",
+                        "required": true
+                    },
+                    {
+                        "type": "boolean",
+                        "description": "Lewati klasifikasi CNN server",
+                        "name": "skip_cnn",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/dto.UploadImageResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/dto.APIErrorResponse"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "auth.AuthResponse": {
+            "type": "object",
+            "properties": {
+                "expires_at": {
+                    "type": "string",
+                    "example": "2023-10-27T10:00:00Z"
+                },
+                "token": {
+                    "type": "string",
+                    "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                },
+                "token_type": {
+                    "type": "string",
+                    "example": "Bearer"
+                },
+                "user": {
+                    "$ref": "#/definitions/auth.UserResponse"
+                }
+            }
+        },
+        "auth.LoginRequest": {
+            "type": "object",
+            "required": [
+                "password",
+                "phone_number"
+            ],
+            "properties": {
+                "password": {
+                    "type": "string",
+                    "example": "katasandi123"
+                },
+                "phone_number": {
+                    "type": "string",
+                    "maxLength": 32,
+                    "example": "081234567890"
+                }
+            }
+        },
+        "auth.LogoutResponse": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "auth.RegisterRequest": {
+            "type": "object",
+            "required": [
+                "confirm_password",
+                "email",
+                "name",
+                "password",
+                "phone_number"
+            ],
+            "properties": {
+                "confirm_password": {
+                    "type": "string",
+                    "example": "katasandi123"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "[EMAIL_ADDRESS]"
+                },
+                "name": {
+                    "type": "string",
+                    "maxLength": 32,
+                    "minLength": 1,
+                    "example": "Budi Santoso"
+                },
+                "password": {
+                    "type": "string",
+                    "minLength": 8,
+                    "example": "katasandi123"
+                },
+                "phone_number": {
+                    "type": "string",
+                    "maxLength": 32,
+                    "example": "081234567890"
+                }
+            }
+        },
+        "auth.UserResponse": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string",
+                    "example": "2023-10-27T10:00:00Z"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "[EMAIL_ADDRESS]"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "123e4567-e89b-12d3-a456-426614174000"
+                },
+                "name": {
+                    "type": "string",
+                    "example": "Budi Santoso"
+                },
+                "phone_number": {
+                    "type": "string",
+                    "example": "081234567890"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "example": "2023-10-27T10:00:00Z"
+                }
+            }
+        },
+        "conversation.DeleteManyRequest": {
+            "type": "object",
+            "required": [
+                "conversation_ids"
+            ],
+            "properties": {
+                "conversation_ids": {
+                    "type": "array",
+                    "maxItems": 100,
+                    "minItems": 1,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "conversation.ItemResponse": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "last_message": {
+                    "type": "string"
+                },
+                "last_message_at": {
+                    "type": "string"
+                },
+                "last_message_role": {
+                    "type": "string"
+                },
+                "last_message_type": {
+                    "type": "string"
+                },
+                "mode": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "unread_count": {
+                    "type": "integer"
+                },
+                "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "conversation.ListResponse": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/conversation.ItemResponse"
+                    }
+                },
+                "pagination": {
+                    "$ref": "#/definitions/conversation.PaginationMeta"
+                }
+            }
+        },
+        "conversation.PaginationMeta": {
+            "type": "object",
+            "properties": {
+                "has_next": {
+                    "type": "boolean"
+                },
+                "has_prev": {
+                    "type": "boolean"
+                },
+                "limit": {
+                    "type": "integer"
+                },
+                "page": {
+                    "type": "integer"
+                },
+                "total": {
+                    "type": "integer"
+                },
+                "total_page": {
+                    "type": "integer"
+                }
+            }
+        },
+        "domain.MessageType": {
+            "type": "string",
+            "enum": [
+                "text",
+                "image"
+            ],
+            "x-enum-varnames": [
+                "MessageTypeText",
+                "MessageTypeImage"
+            ]
+        },
+        "dto.AIMessageMetadata": {
+            "type": "object",
+            "properties": {
+                "finish_reason": {
+                    "type": "string"
+                },
+                "input_tokens": {
+                    "type": "integer"
+                },
+                "latency_ms": {
+                    "type": "integer"
+                },
+                "model": {
+                    "type": "string"
+                },
+                "output_tokens": {
+                    "type": "integer"
+                },
+                "provider": {
+                    "type": "string"
+                },
+                "total_tokens": {
+                    "type": "integer"
+                }
+            }
+        },
+        "dto.APIErrorResponse": {
+            "type": "object",
+            "properties": {
+                "error": {
+                    "type": "string",
+                    "example": "unauthorized"
+                }
+            }
+        },
+        "dto.ActionType": {
+            "type": "string",
+            "enum": [
+                "upload_image",
+                "select_symptom",
+                "select_severity",
+                "select_growth_stage",
+                "generate_result",
+                "continue_consultation"
+            ],
+            "x-enum-varnames": [
+                "ActionUploadImage",
+                "ActionSelectSymptom",
+                "ActionSelectSeverity",
+                "ActionSelectGrowth",
+                "ActionGenerateResult",
+                "ActionContinueConsult"
+            ]
+        },
+        "dto.AttachmentResponse": {
+            "type": "object",
+            "properties": {
+                "checksum": {
+                    "type": "string"
+                },
+                "height": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "mime_type": {
+                    "type": "string"
+                },
+                "size": {
+                    "type": "integer"
+                },
+                "thumbnail_url": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "width": {
+                    "type": "integer"
+                }
+            }
+        },
+        "dto.ChatAction": {
+            "type": "object",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/dto.ActionType"
+                },
+                "value": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.ConversationMode": {
+            "type": "string",
+            "enum": [
+                "consultation",
+                "diagnose"
+            ],
+            "x-enum-varnames": [
+                "ConversationModeConsultation",
+                "ConversationModeDiagnose"
+            ]
+        },
+        "dto.CreateAttachmentRequest": {
+            "type": "object",
+            "required": [
+                "mime_type",
+                "size",
+                "type",
+                "url"
+            ],
+            "properties": {
+                "checksum": {
+                    "type": "string"
+                },
+                "height": {
+                    "type": "integer"
+                },
+                "mime_type": {
+                    "type": "string"
+                },
+                "size": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "thumbnail_url": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "width": {
+                    "type": "integer"
+                }
+            }
+        },
+        "dto.CreateMessageRequest": {
+            "type": "object",
+            "required": [
+                "content",
+                "type"
+            ],
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.CreateAttachmentRequest"
+                    }
+                },
+                "content": {
+                    "type": "string"
+                },
+                "conversation_id": {
+                    "type": "string"
+                },
+                "detections": {
+                    "description": "top-k detections from cnn model",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.DetectionCandidateRequest"
+                    }
+                },
+                "type": {
+                    "$ref": "#/definitions/domain.MessageType"
+                }
+            }
+        },
+        "dto.DetectionCandidateRequest": {
+            "type": "object",
+            "required": [
+                "confidence",
+                "label",
+                "model"
+            ],
+            "properties": {
+                "confidence": {
+                    "type": "number",
+                    "maximum": 1,
+                    "minimum": 0
+                },
+                "label": {
+                    "type": "string"
+                },
+                "latency_ms": {
+                    "type": "integer"
+                },
+                "model": {
+                    "type": "string"
+                },
+                "rank": {
+                    "type": "integer"
+                },
+                "source": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.DetectionConfidence": {
+            "type": "object",
+            "properties": {
+                "cnn_model": {
+                    "type": "number"
+                },
+                "final_classification": {
+                    "type": "number"
+                }
+            }
+        },
+        "dto.DeterministicDiagnosisResponse": {
+            "type": "object",
+            "properties": {
+                "matched_rule_code": {
+                    "type": "string"
+                },
+                "reasoning": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "summary": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.DiagnoseFlowState": {
+            "type": "string",
+            "enum": [
+                "idle",
+                "image_analyzed",
+                "collect_symptoms",
+                "normalize_symptoms",
+                "collect_severity",
+                "collect_growth_stage",
+                "generate_result",
+                "completed"
+            ],
+            "x-enum-varnames": [
+                "DiagnoseFlowStateIdle",
+                "DiagnoseFlowStateImageAnalyzed",
+                "DiagnoseFlowStateCollectSymptoms",
+                "DiagnoseFlowStateNormalizeSymptoms",
+                "DiagnoseFlowStateCollectSeverity",
+                "DiagnoseFlowStateCollectGrowthStage",
+                "DiagnoseFlowStateGenerateResult",
+                "DiagnoseFlowStateCompleted"
+            ]
+        },
+        "dto.DiagnoseImageResponse": {
+            "type": "object",
+            "properties": {
+                "candidates": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.PestDetectionCandidate"
+                    }
+                },
+                "confidence": {
+                    "$ref": "#/definitions/dto.DetectionConfidence"
+                },
+                "primary_detection": {
+                    "$ref": "#/definitions/dto.PestDetectionCandidate"
+                },
+                "uploaded_image_url": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.DiagnosePayload": {
+            "type": "object",
+            "properties": {
+                "result": {
+                    "$ref": "#/definitions/dto.DiagnosisResultResponse"
+                },
+                "session": {
+                    "$ref": "#/definitions/dto.DiagnoseSessionResponse"
+                }
+            }
+        },
+        "dto.DiagnoseSessionMetadata": {
+            "type": "object",
+            "properties": {
+                "is_completed": {
+                    "type": "boolean"
+                },
+                "is_fallback_llm": {
+                    "type": "boolean"
+                },
+                "retry_count": {
+                    "type": "integer"
+                }
+            }
+        },
+        "dto.DiagnoseSessionResponse": {
+            "type": "object",
+            "properties": {
+                "conversation_id": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "growth_stage": {
+                    "$ref": "#/definitions/dto.GrowthStageReference"
+                },
+                "image": {
+                    "$ref": "#/definitions/dto.DiagnoseImageResponse"
+                },
+                "metadata": {
+                    "$ref": "#/definitions/dto.DiagnoseSessionMetadata"
+                },
+                "mode": {
+                    "$ref": "#/definitions/dto.ConversationMode"
+                },
+                "session_id": {
+                    "type": "string"
+                },
+                "severity": {
+                    "$ref": "#/definitions/dto.SeverityReference"
+                },
+                "state": {
+                    "$ref": "#/definitions/dto.DiagnoseFlowState"
+                },
+                "symptoms": {
+                    "$ref": "#/definitions/dto.SymptomAnalysisResponse"
+                },
+                "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.DiagnosisConfidence": {
+            "type": "object",
+            "properties": {
+                "cnn": {
+                    "type": "number"
+                },
+                "final_score": {
+                    "type": "number"
+                },
+                "rule_engine": {
+                    "type": "number"
+                },
+                "symptom_normalization": {
+                    "type": "number"
+                }
+            }
+        },
+        "dto.DiagnosisResultResponse": {
+            "type": "object",
+            "properties": {
+                "confidence": {
+                    "$ref": "#/definitions/dto.DiagnosisConfidence"
+                },
+                "deterministic": {
+                    "$ref": "#/definitions/dto.DeterministicDiagnosisResponse"
+                },
+                "expert_validation": {
+                    "$ref": "#/definitions/dto.ExpertValidationResponse"
+                },
+                "growth_stage": {
+                    "$ref": "#/definitions/dto.GrowthStageReference"
+                },
+                "llm": {
+                    "$ref": "#/definitions/dto.LLMExplanationResponse"
+                },
+                "matched_rule_id": {
+                    "type": "string"
+                },
+                "matched_symptoms": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.SymptomReference"
+                    }
+                },
+                "pest": {
+                    "$ref": "#/definitions/dto.PestReference"
+                },
+                "recommendations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.PesticideRecommendationResponse"
+                    }
+                },
+                "severity": {
+                    "$ref": "#/definitions/dto.SeverityReference"
+                }
+            }
+        },
+        "dto.ExpertValidationChecklistResponse": {
+            "type": "object",
+            "properties": {
+                "aspect": {
+                    "type": "string"
+                },
+                "expected_expert_input": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "question": {
+                    "type": "string"
+                },
+                "system_answer": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.ExpertValidationEvidenceResponse": {
+            "type": "object",
+            "properties": {
+                "component": {
+                    "type": "string"
+                },
+                "note": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "system_value": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.ExpertValidationResponse": {
+            "type": "object",
+            "properties": {
+                "checklist": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.ExpertValidationChecklistResponse"
+                    }
+                },
+                "evidence": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.ExpertValidationEvidenceResponse"
+                    }
+                },
+                "expert_decision_options": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "fields_to_review": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "overall_note": {
+                    "type": "string"
+                },
+                "rating_scale": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "readiness_label": {
+                    "type": "string"
+                },
+                "readiness_status": {
+                    "type": "string"
+                },
+                "validation_target": {
+                    "type": "string"
+                },
+                "warnings": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "dto.GrowthStageReference": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.LLMExplanationResponse": {
+            "type": "object",
+            "properties": {
+                "model": {
+                    "type": "string"
+                },
+                "prevention": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "reasoning": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "warnings": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "dto.MessageListResponse": {
+            "type": "object",
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.MessageResponse"
+                    }
+                }
+            }
+        },
+        "dto.MessageResponse": {
+            "type": "object",
+            "properties": {
+                "actions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.ChatAction"
+                    }
+                },
+                "ai": {
+                    "$ref": "#/definitions/dto.AIMessageMetadata"
+                },
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.AttachmentResponse"
+                    }
+                },
+                "content": {
+                    "type": "string"
+                },
+                "conversation_id": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "is_streaming": {
+                    "type": "boolean"
+                },
+                "payload": {
+                    "$ref": "#/definitions/dto.OrchestratorPayload"
+                },
+                "role": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.NormalizedSymptomResponse": {
+            "type": "object",
+            "properties": {
+                "confidence": {
+                    "type": "number"
+                },
+                "input_text": {
+                    "type": "string"
+                },
+                "matched_symptom_id": {
+                    "type": "string"
+                },
+                "matched_symptom_name": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.OrchestratorPayload": {
+            "type": "object",
+            "properties": {
+                "diagnose": {
+                    "$ref": "#/definitions/dto.DiagnosePayload"
+                }
+            }
+        },
+        "dto.OrchestratorResponse": {
+            "type": "object",
+            "properties": {
+                "actions": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.ChatAction"
+                    }
+                },
+                "created_at": {
+                    "type": "string"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "mode": {
+                    "$ref": "#/definitions/dto.ConversationMode"
+                },
+                "payload": {
+                    "$ref": "#/definitions/dto.OrchestratorPayload"
+                },
+                "session_id": {
+                    "type": "string"
+                },
+                "state": {
+                    "$ref": "#/definitions/dto.DiagnoseFlowState"
+                }
+            }
+        },
+        "dto.PestDetectionCandidate": {
+            "type": "object",
+            "properties": {
+                "confidence": {
+                    "type": "number"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "model": {
+                    "type": "string"
+                },
+                "pest": {
+                    "$ref": "#/definitions/dto.PestReference"
+                }
+            }
+        },
+        "dto.PestReference": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "label_name": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.PesticideApplicationTimingResponse": {
+            "type": "object",
+            "properties": {
+                "application_context": {
+                    "type": "string"
+                },
+                "application_method": {
+                    "type": "string"
+                },
+                "application_target": {
+                    "type": "string"
+                },
+                "application_trigger": {
+                    "type": "string"
+                },
+                "display_warning": {
+                    "type": "string"
+                },
+                "field_diagnosis_allowed": {
+                    "type": "boolean"
+                },
+                "preharvest_interval_note": {
+                    "type": "string"
+                },
+                "reference_institution": {
+                    "type": "string"
+                },
+                "reference_note": {
+                    "type": "string"
+                },
+                "reference_title": {
+                    "type": "string"
+                },
+                "reference_url": {
+                    "type": "string"
+                },
+                "reference_year": {
+                    "type": "string"
+                },
+                "timing_instruction": {
+                    "type": "string"
+                },
+                "timing_window": {
+                    "type": "string"
+                },
+                "water_management": {
+                    "type": "string"
+                },
+                "weather_condition": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.PesticideDosageResponse": {
+            "type": "object",
+            "properties": {
+                "dose_raw": {
+                    "type": "string"
+                },
+                "dose_unit": {
+                    "type": "string"
+                },
+                "max_dose": {
+                    "type": "number"
+                },
+                "min_dose": {
+                    "type": "number"
+                }
+            }
+        },
+        "dto.PesticideIngredientResponse": {
+            "type": "object",
+            "properties": {
+                "concentration_raw": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.PesticideRecommendationResponse": {
+            "type": "object",
+            "properties": {
+                "application_timing": {
+                    "$ref": "#/definitions/dto.PesticideApplicationTimingResponse"
+                },
+                "display_name": {
+                    "type": "string"
+                },
+                "dosage": {
+                    "$ref": "#/definitions/dto.PesticideDosageResponse"
+                },
+                "formulation": {
+                    "type": "string"
+                },
+                "ingredients": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.PesticideIngredientResponse"
+                    }
+                },
+                "match_score": {
+                    "type": "number"
+                },
+                "pesticide_id": {
+                    "type": "string"
+                },
+                "pesticide_type": {
+                    "type": "string"
+                },
+                "product_name": {
+                    "type": "string"
+                },
+                "reason": {
+                    "type": "string"
+                },
+                "recommendation_basis": {
+                    "type": "string"
+                },
+                "recommendation_confidence": {
+                    "type": "number"
+                },
+                "safety": {
+                    "$ref": "#/definitions/dto.PesticideSafetyResponse"
+                },
+                "score_breakdown": {
+                    "$ref": "#/definitions/dto.PesticideScoreBreakdownResponse"
+                },
+                "trade_name_hidden": {
+                    "type": "boolean"
+                },
+                "trade_name_policy": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.PesticideSafetyResponse": {
+            "type": "object",
+            "properties": {
+                "max_application": {
+                    "type": "string"
+                },
+                "mixing_warning": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "pre_harvest_interval": {
+                    "type": "string"
+                },
+                "reentry_interval": {
+                    "type": "string"
+                },
+                "toxicity_class": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.PesticideScoreBreakdownResponse": {
+            "type": "object",
+            "properties": {
+                "data_quality": {
+                    "type": "number"
+                },
+                "dose_quality": {
+                    "type": "number"
+                },
+                "growth_stage": {
+                    "type": "number"
+                },
+                "ingredient_fit": {
+                    "type": "number"
+                },
+                "safety": {
+                    "type": "number"
+                },
+                "severity_fit": {
+                    "type": "number"
+                },
+                "target_fit": {
+                    "type": "number"
+                },
+                "weighted_score": {
+                    "type": "number"
+                }
+            }
+        },
+        "dto.SeverityReference": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.SymptomAnalysisResponse": {
+            "type": "object",
+            "properties": {
+                "confidence": {
+                    "$ref": "#/definitions/dto.SymptomConfidence"
+                },
+                "normalized": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.NormalizedSymptomResponse"
+                    }
+                },
+                "selected": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.SymptomReference"
+                    }
+                },
+                "unknown": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "user_inputs": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "dto.SymptomConfidence": {
+            "type": "object",
+            "properties": {
+                "normalization": {
+                    "type": "number"
+                },
+                "rule_matching": {
+                    "type": "number"
+                }
+            }
+        },
+        "dto.SymptomReference": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "dto.UploadImageResponse": {
+            "type": "object",
+            "properties": {
+                "cnn_source": {
+                    "type": "string",
+                    "example": "on_device_flutter"
+                },
+                "detections": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/dto.DetectionCandidateRequest"
+                    }
+                },
+                "message": {
+                    "type": "string",
+                    "example": "upload success"
+                },
+                "url": {
+                    "type": "string",
+                    "example": "/uploads/1710000000_uuid.jpg"
+                }
+            }
+        },
+        "profile.ChangePasswordRequest": {
+            "type": "object",
+            "required": [
+                "confirm_password",
+                "current_password",
+                "new_password"
+            ],
+            "properties": {
+                "confirm_password": {
+                    "type": "string"
+                },
+                "current_password": {
+                    "type": "string"
+                },
+                "new_password": {
+                    "type": "string",
+                    "minLength": 8
+                }
+            }
+        },
+        "profile.Response": {
+            "type": "object",
+            "properties": {
+                "created_at": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "phone_number": {
+                    "type": "string"
+                },
+                "updated_at": {
+                    "type": "string"
+                }
+            }
+        },
+        "profile.UpdateRequest": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string",
+                    "maxLength": 32,
+                    "minLength": 1
+                },
+                "phone_number": {
+                    "type": "string",
+                    "maxLength": 32
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "BearerAuth": {
+            "description": "Masukkan token JWT dengan format: Bearer \u003ctoken\u003e",
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}

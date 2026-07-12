@@ -1,0 +1,1365 @@
+basePath: /
+definitions:
+  auth.AuthResponse:
+    properties:
+      expires_at:
+        example: "2023-10-27T10:00:00Z"
+        type: string
+      token:
+        example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+        type: string
+      token_type:
+        example: Bearer
+        type: string
+      user:
+        $ref: '#/definitions/auth.UserResponse'
+    type: object
+  auth.LoginRequest:
+    properties:
+      password:
+        example: katasandi123
+        type: string
+      phone_number:
+        example: "081234567890"
+        maxLength: 32
+        type: string
+    required:
+    - password
+    - phone_number
+    type: object
+  auth.LogoutResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  auth.RegisterRequest:
+    properties:
+      confirm_password:
+        example: katasandi123
+        type: string
+      email:
+        example: '[EMAIL_ADDRESS]'
+        type: string
+      name:
+        example: Budi Santoso
+        maxLength: 32
+        minLength: 1
+        type: string
+      password:
+        example: katasandi123
+        minLength: 8
+        type: string
+      phone_number:
+        example: "081234567890"
+        maxLength: 32
+        type: string
+    required:
+    - confirm_password
+    - email
+    - name
+    - password
+    - phone_number
+    type: object
+  auth.UserResponse:
+    properties:
+      created_at:
+        example: "2023-10-27T10:00:00Z"
+        type: string
+      email:
+        example: '[EMAIL_ADDRESS]'
+        type: string
+      id:
+        example: 123e4567-e89b-12d3-a456-426614174000
+        type: string
+      name:
+        example: Budi Santoso
+        type: string
+      phone_number:
+        example: "081234567890"
+        type: string
+      updated_at:
+        example: "2023-10-27T10:00:00Z"
+        type: string
+    type: object
+  conversation.DeleteManyRequest:
+    properties:
+      conversation_ids:
+        items:
+          type: string
+        maxItems: 100
+        minItems: 1
+        type: array
+    required:
+    - conversation_ids
+    type: object
+  conversation.ItemResponse:
+    properties:
+      created_at:
+        type: string
+      id:
+        type: string
+      last_message:
+        type: string
+      last_message_at:
+        type: string
+      last_message_role:
+        type: string
+      last_message_type:
+        type: string
+      mode:
+        type: string
+      state:
+        type: string
+      title:
+        type: string
+      unread_count:
+        type: integer
+      updated_at:
+        type: string
+    type: object
+  conversation.ListResponse:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/conversation.ItemResponse'
+        type: array
+      pagination:
+        $ref: '#/definitions/conversation.PaginationMeta'
+    type: object
+  conversation.PaginationMeta:
+    properties:
+      has_next:
+        type: boolean
+      has_prev:
+        type: boolean
+      limit:
+        type: integer
+      page:
+        type: integer
+      total:
+        type: integer
+      total_page:
+        type: integer
+    type: object
+  domain.MessageType:
+    enum:
+    - text
+    - image
+    type: string
+    x-enum-varnames:
+    - MessageTypeText
+    - MessageTypeImage
+  dto.AIMessageMetadata:
+    properties:
+      finish_reason:
+        type: string
+      input_tokens:
+        type: integer
+      latency_ms:
+        type: integer
+      model:
+        type: string
+      output_tokens:
+        type: integer
+      provider:
+        type: string
+      total_tokens:
+        type: integer
+    type: object
+  dto.APIErrorResponse:
+    properties:
+      error:
+        example: unauthorized
+        type: string
+    type: object
+  dto.ActionType:
+    enum:
+    - upload_image
+    - select_symptom
+    - select_severity
+    - select_growth_stage
+    - generate_result
+    - continue_consultation
+    type: string
+    x-enum-varnames:
+    - ActionUploadImage
+    - ActionSelectSymptom
+    - ActionSelectSeverity
+    - ActionSelectGrowth
+    - ActionGenerateResult
+    - ActionContinueConsult
+  dto.AttachmentResponse:
+    properties:
+      checksum:
+        type: string
+      height:
+        type: integer
+      id:
+        type: string
+      mime_type:
+        type: string
+      size:
+        type: integer
+      thumbnail_url:
+        type: string
+      type:
+        type: string
+      url:
+        type: string
+      width:
+        type: integer
+    type: object
+  dto.ChatAction:
+    properties:
+      label:
+        type: string
+      type:
+        $ref: '#/definitions/dto.ActionType'
+      value:
+        type: string
+    type: object
+  dto.ConversationMode:
+    enum:
+    - consultation
+    - diagnose
+    type: string
+    x-enum-varnames:
+    - ConversationModeConsultation
+    - ConversationModeDiagnose
+  dto.CreateAttachmentRequest:
+    properties:
+      checksum:
+        type: string
+      height:
+        type: integer
+      mime_type:
+        type: string
+      size:
+        minimum: 1
+        type: integer
+      thumbnail_url:
+        type: string
+      type:
+        type: string
+      url:
+        type: string
+      width:
+        type: integer
+    required:
+    - mime_type
+    - size
+    - type
+    - url
+    type: object
+  dto.CreateMessageRequest:
+    properties:
+      attachments:
+        items:
+          $ref: '#/definitions/dto.CreateAttachmentRequest'
+        type: array
+      content:
+        type: string
+      conversation_id:
+        type: string
+      detections:
+        description: top-k detections from cnn model
+        items:
+          $ref: '#/definitions/dto.DetectionCandidateRequest'
+        type: array
+      type:
+        $ref: '#/definitions/domain.MessageType'
+    required:
+    - content
+    - type
+    type: object
+  dto.DetectionCandidateRequest:
+    properties:
+      confidence:
+        maximum: 1
+        minimum: 0
+        type: number
+      label:
+        type: string
+      latency_ms:
+        type: integer
+      model:
+        type: string
+      rank:
+        type: integer
+      source:
+        type: string
+    required:
+    - confidence
+    - label
+    - model
+    type: object
+  dto.DetectionConfidence:
+    properties:
+      cnn_model:
+        type: number
+      final_classification:
+        type: number
+    type: object
+  dto.DeterministicDiagnosisResponse:
+    properties:
+      matched_rule_code:
+        type: string
+      reasoning:
+        items:
+          type: string
+        type: array
+      summary:
+        type: string
+    type: object
+  dto.DiagnoseFlowState:
+    enum:
+    - idle
+    - image_analyzed
+    - collect_symptoms
+    - normalize_symptoms
+    - collect_severity
+    - collect_growth_stage
+    - generate_result
+    - completed
+    type: string
+    x-enum-varnames:
+    - DiagnoseFlowStateIdle
+    - DiagnoseFlowStateImageAnalyzed
+    - DiagnoseFlowStateCollectSymptoms
+    - DiagnoseFlowStateNormalizeSymptoms
+    - DiagnoseFlowStateCollectSeverity
+    - DiagnoseFlowStateCollectGrowthStage
+    - DiagnoseFlowStateGenerateResult
+    - DiagnoseFlowStateCompleted
+  dto.DiagnoseImageResponse:
+    properties:
+      candidates:
+        items:
+          $ref: '#/definitions/dto.PestDetectionCandidate'
+        type: array
+      confidence:
+        $ref: '#/definitions/dto.DetectionConfidence'
+      primary_detection:
+        $ref: '#/definitions/dto.PestDetectionCandidate'
+      uploaded_image_url:
+        type: string
+    type: object
+  dto.DiagnosePayload:
+    properties:
+      result:
+        $ref: '#/definitions/dto.DiagnosisResultResponse'
+      session:
+        $ref: '#/definitions/dto.DiagnoseSessionResponse'
+    type: object
+  dto.DiagnoseSessionMetadata:
+    properties:
+      is_completed:
+        type: boolean
+      is_fallback_llm:
+        type: boolean
+      retry_count:
+        type: integer
+    type: object
+  dto.DiagnoseSessionResponse:
+    properties:
+      conversation_id:
+        type: string
+      created_at:
+        type: string
+      growth_stage:
+        $ref: '#/definitions/dto.GrowthStageReference'
+      image:
+        $ref: '#/definitions/dto.DiagnoseImageResponse'
+      metadata:
+        $ref: '#/definitions/dto.DiagnoseSessionMetadata'
+      mode:
+        $ref: '#/definitions/dto.ConversationMode'
+      session_id:
+        type: string
+      severity:
+        $ref: '#/definitions/dto.SeverityReference'
+      state:
+        $ref: '#/definitions/dto.DiagnoseFlowState'
+      symptoms:
+        $ref: '#/definitions/dto.SymptomAnalysisResponse'
+      updated_at:
+        type: string
+    type: object
+  dto.DiagnosisConfidence:
+    properties:
+      cnn:
+        type: number
+      final_score:
+        type: number
+      rule_engine:
+        type: number
+      symptom_normalization:
+        type: number
+    type: object
+  dto.DiagnosisResultResponse:
+    properties:
+      confidence:
+        $ref: '#/definitions/dto.DiagnosisConfidence'
+      deterministic:
+        $ref: '#/definitions/dto.DeterministicDiagnosisResponse'
+      expert_validation:
+        $ref: '#/definitions/dto.ExpertValidationResponse'
+      growth_stage:
+        $ref: '#/definitions/dto.GrowthStageReference'
+      llm:
+        $ref: '#/definitions/dto.LLMExplanationResponse'
+      matched_rule_id:
+        type: string
+      matched_symptoms:
+        items:
+          $ref: '#/definitions/dto.SymptomReference'
+        type: array
+      pest:
+        $ref: '#/definitions/dto.PestReference'
+      recommendations:
+        items:
+          $ref: '#/definitions/dto.PesticideRecommendationResponse'
+        type: array
+      severity:
+        $ref: '#/definitions/dto.SeverityReference'
+    type: object
+  dto.ExpertValidationChecklistResponse:
+    properties:
+      aspect:
+        type: string
+      expected_expert_input:
+        items:
+          type: string
+        type: array
+      question:
+        type: string
+      system_answer:
+        type: string
+    type: object
+  dto.ExpertValidationEvidenceResponse:
+    properties:
+      component:
+        type: string
+      note:
+        type: string
+      source:
+        type: string
+      system_value:
+        type: string
+    type: object
+  dto.ExpertValidationResponse:
+    properties:
+      checklist:
+        items:
+          $ref: '#/definitions/dto.ExpertValidationChecklistResponse'
+        type: array
+      evidence:
+        items:
+          $ref: '#/definitions/dto.ExpertValidationEvidenceResponse'
+        type: array
+      expert_decision_options:
+        items:
+          type: string
+        type: array
+      fields_to_review:
+        items:
+          type: string
+        type: array
+      overall_note:
+        type: string
+      rating_scale:
+        items:
+          type: string
+        type: array
+      readiness_label:
+        type: string
+      readiness_status:
+        type: string
+      validation_target:
+        type: string
+      warnings:
+        items:
+          type: string
+        type: array
+    type: object
+  dto.GrowthStageReference:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+    type: object
+  dto.LLMExplanationResponse:
+    properties:
+      model:
+        type: string
+      prevention:
+        items:
+          type: string
+        type: array
+      reasoning:
+        items:
+          type: string
+        type: array
+      summary:
+        type: string
+      warnings:
+        items:
+          type: string
+        type: array
+    type: object
+  dto.MessageListResponse:
+    properties:
+      items:
+        items:
+          $ref: '#/definitions/dto.MessageResponse'
+        type: array
+    type: object
+  dto.MessageResponse:
+    properties:
+      actions:
+        items:
+          $ref: '#/definitions/dto.ChatAction'
+        type: array
+      ai:
+        $ref: '#/definitions/dto.AIMessageMetadata'
+      attachments:
+        items:
+          $ref: '#/definitions/dto.AttachmentResponse'
+        type: array
+      content:
+        type: string
+      conversation_id:
+        type: string
+      created_at:
+        type: string
+      id:
+        type: string
+      is_streaming:
+        type: boolean
+      payload:
+        $ref: '#/definitions/dto.OrchestratorPayload'
+      role:
+        type: string
+      source:
+        type: string
+      status:
+        type: string
+      type:
+        type: string
+    type: object
+  dto.NormalizedSymptomResponse:
+    properties:
+      confidence:
+        type: number
+      input_text:
+        type: string
+      matched_symptom_id:
+        type: string
+      matched_symptom_name:
+        type: string
+      source:
+        type: string
+    type: object
+  dto.OrchestratorPayload:
+    properties:
+      diagnose:
+        $ref: '#/definitions/dto.DiagnosePayload'
+    type: object
+  dto.OrchestratorResponse:
+    properties:
+      actions:
+        items:
+          $ref: '#/definitions/dto.ChatAction'
+        type: array
+      created_at:
+        type: string
+      message:
+        type: string
+      mode:
+        $ref: '#/definitions/dto.ConversationMode'
+      payload:
+        $ref: '#/definitions/dto.OrchestratorPayload'
+      session_id:
+        type: string
+      state:
+        $ref: '#/definitions/dto.DiagnoseFlowState'
+    type: object
+  dto.PestDetectionCandidate:
+    properties:
+      confidence:
+        type: number
+      label:
+        type: string
+      model:
+        type: string
+      pest:
+        $ref: '#/definitions/dto.PestReference'
+    type: object
+  dto.PestReference:
+    properties:
+      id:
+        type: string
+      label_name:
+        type: string
+      name:
+        type: string
+    type: object
+  dto.PesticideApplicationTimingResponse:
+    properties:
+      application_context:
+        type: string
+      application_method:
+        type: string
+      application_target:
+        type: string
+      application_trigger:
+        type: string
+      display_warning:
+        type: string
+      field_diagnosis_allowed:
+        type: boolean
+      preharvest_interval_note:
+        type: string
+      reference_institution:
+        type: string
+      reference_note:
+        type: string
+      reference_title:
+        type: string
+      reference_url:
+        type: string
+      reference_year:
+        type: string
+      timing_instruction:
+        type: string
+      timing_window:
+        type: string
+      water_management:
+        type: string
+      weather_condition:
+        type: string
+    type: object
+  dto.PesticideDosageResponse:
+    properties:
+      dose_raw:
+        type: string
+      dose_unit:
+        type: string
+      max_dose:
+        type: number
+      min_dose:
+        type: number
+    type: object
+  dto.PesticideIngredientResponse:
+    properties:
+      concentration_raw:
+        type: string
+      name:
+        type: string
+    type: object
+  dto.PesticideRecommendationResponse:
+    properties:
+      application_timing:
+        $ref: '#/definitions/dto.PesticideApplicationTimingResponse'
+      display_name:
+        type: string
+      dosage:
+        $ref: '#/definitions/dto.PesticideDosageResponse'
+      formulation:
+        type: string
+      ingredients:
+        items:
+          $ref: '#/definitions/dto.PesticideIngredientResponse'
+        type: array
+      match_score:
+        type: number
+      pesticide_id:
+        type: string
+      pesticide_type:
+        type: string
+      product_name:
+        type: string
+      reason:
+        type: string
+      recommendation_basis:
+        type: string
+      recommendation_confidence:
+        type: number
+      safety:
+        $ref: '#/definitions/dto.PesticideSafetyResponse'
+      score_breakdown:
+        $ref: '#/definitions/dto.PesticideScoreBreakdownResponse'
+      trade_name_hidden:
+        type: boolean
+      trade_name_policy:
+        type: string
+    type: object
+  dto.PesticideSafetyResponse:
+    properties:
+      max_application:
+        type: string
+      mixing_warning:
+        items:
+          type: string
+        type: array
+      pre_harvest_interval:
+        type: string
+      reentry_interval:
+        type: string
+      toxicity_class:
+        type: string
+    type: object
+  dto.PesticideScoreBreakdownResponse:
+    properties:
+      data_quality:
+        type: number
+      dose_quality:
+        type: number
+      growth_stage:
+        type: number
+      ingredient_fit:
+        type: number
+      safety:
+        type: number
+      severity_fit:
+        type: number
+      target_fit:
+        type: number
+      weighted_score:
+        type: number
+    type: object
+  dto.SeverityReference:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+    type: object
+  dto.SymptomAnalysisResponse:
+    properties:
+      confidence:
+        $ref: '#/definitions/dto.SymptomConfidence'
+      normalized:
+        items:
+          $ref: '#/definitions/dto.NormalizedSymptomResponse'
+        type: array
+      selected:
+        items:
+          $ref: '#/definitions/dto.SymptomReference'
+        type: array
+      unknown:
+        items:
+          type: string
+        type: array
+      user_inputs:
+        items:
+          type: string
+        type: array
+    type: object
+  dto.SymptomConfidence:
+    properties:
+      normalization:
+        type: number
+      rule_matching:
+        type: number
+    type: object
+  dto.SymptomReference:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+    type: object
+  dto.UploadImageResponse:
+    properties:
+      cnn_source:
+        example: on_device_flutter
+        type: string
+      detections:
+        items:
+          $ref: '#/definitions/dto.DetectionCandidateRequest'
+        type: array
+      message:
+        example: upload success
+        type: string
+      url:
+        example: /uploads/1710000000_uuid.jpg
+        type: string
+    type: object
+  profile.ChangePasswordRequest:
+    properties:
+      confirm_password:
+        type: string
+      current_password:
+        type: string
+      new_password:
+        minLength: 8
+        type: string
+    required:
+    - confirm_password
+    - current_password
+    - new_password
+    type: object
+  profile.Response:
+    properties:
+      created_at:
+        type: string
+      email:
+        type: string
+      id:
+        type: string
+      name:
+        type: string
+      phone_number:
+        type: string
+      updated_at:
+        type: string
+    type: object
+  profile.UpdateRequest:
+    properties:
+      email:
+        type: string
+      name:
+        maxLength: 32
+        minLength: 1
+        type: string
+      phone_number:
+        maxLength: 32
+        type: string
+    type: object
+info:
+  contact: {}
+  description: Dokumentasi REST API backend AgriPadi untuk autentikasi, profil, upload
+    gambar, percakapan, dan alur diagnosis hama padi.
+  termsOfService: http://swagger.io/terms/
+  title: AgriPadi Backend API
+  version: "1.0"
+paths:
+  /api/auth/login:
+    post:
+      consumes:
+      - application/json
+      description: Login menggunakan nomor telepon dan password untuk mendapatkan
+        JWT.
+      parameters:
+      - description: Data login
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/auth.LoginRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Login pengguna
+      tags:
+      - Auth
+  /api/auth/logout:
+    post:
+      description: Mengakhiri sesi pengguna di sisi aplikasi.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/auth.LogoutResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Logout pengguna
+      tags:
+      - Auth
+  /api/auth/register:
+    post:
+      consumes:
+      - application/json
+      description: Membuat akun pengguna baru untuk aplikasi AgriPadi.
+      parameters:
+      - description: Data registrasi
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/auth.RegisterRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/auth.AuthResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Registrasi pengguna
+      tags:
+      - Auth
+  /api/conversations:
+    delete:
+      consumes:
+      - application/json
+      description: Menghapus beberapa percakapan berdasarkan daftar ID.
+      parameters:
+      - description: Daftar ID percakapan
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/conversation.DeleteManyRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Hapus beberapa percakapan
+      tags:
+      - Conversations
+    get:
+      description: Mengambil daftar percakapan pengguna dengan pagination.
+      parameters:
+      - description: Halaman
+        in: query
+        name: page
+        type: integer
+      - description: Jumlah data per halaman
+        in: query
+        name: limit
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/conversation.ListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Daftar percakapan
+      tags:
+      - Conversations
+    post:
+      description: Mengambil percakapan berdasarkan ID. Jika ID kosong pada endpoint
+        POST /api/conversations, sistem membuat percakapan baru.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/conversation.ItemResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Ambil atau buat percakapan
+      tags:
+      - Conversations
+  /api/conversations/{conversation_id}:
+    delete:
+      description: Menghapus satu percakapan beserta lampiran lokal milik pengguna.
+      parameters:
+      - description: ID percakapan
+        in: path
+        name: conversation_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Hapus satu percakapan
+      tags:
+      - Conversations
+    get:
+      description: Mengambil percakapan berdasarkan ID. Jika ID kosong pada endpoint
+        POST /api/conversations, sistem membuat percakapan baru.
+      parameters:
+      - description: ID percakapan
+        in: path
+        name: conversation_id
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/conversation.ItemResponse'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Ambil atau buat percakapan
+      tags:
+      - Conversations
+  /api/conversations/{conversation_id}/messages:
+    get:
+      description: Mengambil seluruh pesan pada satu percakapan milik pengguna.
+      parameters:
+      - description: ID percakapan
+        in: path
+        name: conversation_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.MessageListResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+      security:
+      - BearerAuth: []
+      summary: Daftar pesan percakapan
+      tags:
+      - Messages
+    post:
+      consumes:
+      - application/json
+      description: Mengirim pesan pada percakapan. Payload dapat berisi teks, lampiran
+        gambar, dan kandidat deteksi CNN untuk memulai alur diagnosis.
+      parameters:
+      - description: ID percakapan
+        in: path
+        name: conversation_id
+        required: true
+        type: string
+      - description: Data pesan
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/dto.CreateMessageRequest'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/dto.OrchestratorResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+      security:
+      - BearerAuth: []
+      summary: Kirim pesan pengguna
+      tags:
+      - Messages
+  /api/conversations/delete-all:
+    post:
+      description: Menghapus seluruh percakapan milik pengguna yang sedang login.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Hapus seluruh percakapan
+      tags:
+      - Conversations
+  /api/conversations/delete-many:
+    post:
+      consumes:
+      - application/json
+      description: Menghapus beberapa percakapan berdasarkan daftar ID.
+      parameters:
+      - description: Daftar ID percakapan
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/conversation.DeleteManyRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Hapus beberapa percakapan
+      tags:
+      - Conversations
+  /api/profile:
+    get:
+      description: Mengambil detail profil pengguna yang sedang login.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/profile.Response'
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Ambil profil pengguna
+      tags:
+      - Profile
+    patch:
+      consumes:
+      - application/json
+      description: Memperbarui nama, email, atau nomor telepon pengguna.
+      parameters:
+      - description: Data profil
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/profile.UpdateRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/profile.Response'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Perbarui profil pengguna
+      tags:
+      - Profile
+  /api/profile/password:
+    patch:
+      consumes:
+      - application/json
+      description: Mengubah password akun pengguna yang sedang login.
+      parameters:
+      - description: Data perubahan password
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/profile.ChangePasswordRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "401":
+          description: Unauthorized
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      security:
+      - BearerAuth: []
+      summary: Ubah password
+      tags:
+      - Profile
+  /api/upload:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Mengunggah gambar hama padi. Jika mode CNN server aktif, backend
+        dapat mengembalikan kandidat deteksi.
+      parameters:
+      - description: File gambar jpg, jpeg, png, atau webp maksimal 10MB
+        in: formData
+        name: image
+        required: true
+        type: file
+      - description: Lewati klasifikasi CNN server
+        in: query
+        name: skip_cnn
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.UploadImageResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+        "401":
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/dto.APIErrorResponse'
+      security:
+      - BearerAuth: []
+      summary: Upload gambar hama padi
+      tags:
+      - Upload
+schemes:
+- http
+- https
+securityDefinitions:
+  BearerAuth:
+    description: 'Masukkan token JWT dengan format: Bearer <token>'
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
